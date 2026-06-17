@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "kategori": "makanan",
+    "nama_produk": "Keripik Singkong Pedas Manis",
+    "keunggulan": "renyah, pedas manis, tanpa MSG, homemade",
+    "deskripsi_produk": "Keripik singkong pilihan yang diproses secara higienis dengan bumbu pedas manis khas rumahan. Dibuat tanpa MSG dan pengawet buatan, cocok untuk camilan sehat keluarga. Teksturnya renyah dan tipis, memberikan sensasi kriuk yang memuaskan di setiap gigitan.",
+    "caption_ig": "🍟 Kriuk-kriuk bikin nagih! Keripik Singkong Pedas Manis kami hadir tanpa MSG, cocok buat nemenin waktu santai kamu. Pesan sekarang, gratis ongkir minimal 2 pcs! #keripiksingkong #camilansehat #homemade #jajananlokal",
+    "tagline": "Kriuk Alami, Pedas yang Sesungguhnya"
+  },
+  {
+    "id": 2,
+    "kategori": "makanan",
+    "nama_produk": "Sambal Bawang Bu Parti",
+    "keunggulan": "pedas nendang, bawang goreng melimpah, tahan 1 bulan, tanpa pengawet",
+    "deskripsi_produk": "Sambal bawang racikan Bu Parti menggunakan cabai segar pilihan dan bawang goreng yang melimpah. Dimasak dengan minyak kelapa murni untuk cita rasa autentik yang khas. Tahan hingga 1 bulan tanpa bahan pengawet karena proses penggorengan yang sempurna.",
+    "caption_ig": "🌶️ Sambal yang bikin makan jadi 3 piring! Sambal Bawang Bu Parti — bawang gorengnya melimpah, pedasnya nendang. Cocok buat lauk sehari-hari maupun oleh-oleh. #sambal #sambalbawang #pedasmantap #makananenak",
+    "tagline": "Pedasnya Nendang, Bawangnya Melimpah"
+  },
+  {
+    "id": 3,
+    "kategori": "makanan",
+    "nama_produk": "Brownies Kukus Amanda",
+    "keunggulan": "lembut, coklat premium, kukus bukan bakar, tanpa bahan pengawet",
+    "deskripsi_produk": "Brownies kukus dengan tekstur super lembut menggunakan coklat premium pilihan. Proses pengukusan memastikan kelembutan yang konsisten dan tahan lebih lama dibanding brownies bakar. Setiap gigitan meleleh di mulut dengan rasa coklat yang kaya dan tidak terlalu manis.",
+    "caption_ig": "🍫 Lembut banget sampai meleleh di mulut! Brownies Kukus kami pakai coklat premium, tanpa pengawet. Cocok buat hadiah atau sekadar self-reward. DM untuk order! #brownies #browniekukus #coklatpremium #kuebandung",
+    "tagline": "Selembut Cinta, Senikmat Coklat"
+  },
+  {
+    "id": 4,
+    "kategori": "makanan",
+    "nama_produk": "Rendang Sapi Padang Uni Ros",
+    "keunggulan": "daging sapi asli, bumbu rempah lengkap, tahan 1 minggu, autentik Padang",
+    "deskripsi_produk": "Rendang sapi asli Padang buatan Uni Ros menggunakan daging sapi segar berkualitas dengan bumbu rempah lengkap 40 jenis rempah pilihan. Dimasak selama 4 jam hingga bumbu meresap sempurna. Cita rasa autentik yang membawa nuansa masakan Minang sesungguhnya.",
+    "caption_ig": "🥩 Rendang asli Padang sekarang bisa dinikmati di rumah kamu! Pakai 40 rempah pilihan, dimasak 4 jam. Tahan 1 minggu di kulkas. Mau pesan? DM kami sekarang! #rendang #rendangpadang #masakanminang #kulinerpadang",
+    "tagline": "40 Rempah, 4 Jam, Satu Cita Rasa Autentik"
+  },
+  {
+    "id": 5,
+    "kategori": "makanan",
+    "nama_produk": "Klepon Mochi Premium",
+    "keunggulan": "kenyal, isian gula merah cair, tepung ketan premium, tanpa pewarna buatan",
+    "deskripsi_produk": "Klepon mochi premium dengan tekstur kenyal sempurna dari tepung ketan pilihan. Isian gula merah cair yang meledak di mulut memberikan sensasi manis yang tak terlupakan. Pewarna alami dari daun pandan memberi warna hijau segar dan aroma khas.",
+    "caption_ig": "💚 POP! Gula merahnya meledak di mulut~ Klepon Mochi Premium kami pakai pewarna alami pandan, isian gula merah cair. Cocok buat jajanan arisan atau oleh-oleh. #klepon #mochi #jajanantradisional #kuetradisional",
+    "tagline": "Kenyal di Luar, Meledak di Dalam"
+  },
+  {
+    "id": 6,
+    "kategori": "makanan",
+    "nama_produk": "Abon Sapi Lombok Bu Sari",
+    "keunggulan": "serat daging halus, pedas khas Lombok, tanpa MSG, kemasan vacuum",
+    "deskripsi_produk": "Abon sapi khas Lombok dengan serat daging yang halus dan bumbu pedas autentik. Dibuat dari daging sapi segar pilihan yang diolah secara tradisional tanpa MSG. Dikemas secara vacuum untuk menjaga kesegaran dan kerenyahan hingga 3 bulan.",
+    "caption_ig": "🌶️ Abon sapi khas Lombok yang bikin nasi makin lahap! Serat halus, pedas nendang, tanpa MSG. Dikemas vacuum, tahan 3 bulan. Cocok buat bekal atau oleh-oleh khas NTB. #abon #abonsapi #kulinerlombok #oleholeh",
+    "tagline": "Serat Halus, Pedas Lombok yang Asli"
+  },
+  {
+    "id": 7,
+    "kategori": "makanan",
+    "nama_produk": "Cookies Kacang Mede Premium",
+    "keunggulan": "kacang mede asli, renyah, tidak terlalu manis, kemasan gift box",
+    "deskripsi_produk": "Cookies kacang mede premium dengan kacang mede asli Sulawesi yang melimpah di setiap gigitan. Tekstur renyah dengan tingkat kemanisan yang pas, tidak membuat eneg. Tersedia dalam kemasan gift box elegan yang cocok untuk hampers dan oleh-oleh.",
+    "caption_ig": "🍪 Kacang medenya buanyak banget! Cookies Kacang Mede Premium kami — renyah, tidak terlalu manis, cocok buat semua umur. Tersedia gift box untuk hampers. DM sekarang! #cookies #kacangmede #hampers #kuekering",
+    "tagline": "Setiap Gigitan Penuh Kacang Mede Asli"
+  },
+  {
+    "id": 8,
+    "kategori": "makanan",
+    "nama_produk": "Gepuk Daging Sapi Bandung",
+    "keunggulan": "empuk, bumbu meresap, ready to eat, kemasan frozen",
+    "deskripsi_produk": "Gepuk daging sapi khas Bandung dengan tekstur super empuk dan bumbu yang meresap hingga ke dalam serat daging. Proses memasak menggunakan teknik tradisional yang memastikan kelezatan autentik. Tersedia dalam kemasan frozen yang mudah disimpan dan dihangatkan.",
+    "caption_ig": "🥩 Gepuk Bandung yang empuknya bikin melting! Bumbu meresap sampai ke dalam, tinggal panasin langsung bisa makan. Kemasan frozen, tahan 1 bulan. Yuk order! #gepuk #gepukbandung #kulinerbandung #frozenfood",
+    "tagline": "Empuknya Meresap, Rasanya Membekas"
+  },
+  {
+    "id": 9,
+    "kategori": "makanan",
+    "nama_produk": "Tempe Mendoan Frozen Ibu Yanti",
+    "keunggulan": "tempe segar, tepung bumbu khas, siap goreng, praktis",
+    "deskripsi_produk": "Tempe mendoan frozen dengan tempe segar berkualitas yang sudah dilumuri tepung bumbu khas Banyumas. Cukup goreng langsung dari freezer untuk mendapatkan mendoan yang lembut di dalam dan garing di luar. Praktis untuk sarapan atau camilan kapan saja.",
+    "caption_ig": "🍽️ Mendoan Banyumas kini ada di freezer kamu! Tinggal goreng, langsung jadi. Tempe segar + bumbu khas, hasilnya lembut di dalam garing di luar. Yuk cobain! #mendoan #tempemendoan #banyumas #frozenfood",
+    "tagline": "Dari Freezer ke Piring, Semudah Itu"
+  },
+  {
+    "id": 10,
+    "kategori": "makanan",
+    "nama_produk": "Nastar Selai Nanas Homemade",
+    "keunggulan": "selai nanas asli, lumer di mulut, tidak terlalu manis, kemasan toples cantik",
+    "deskripsi_produk": "Nastar homemade dengan selai nanas asli yang dibuat dari buah nanas segar pilihan. Tekstur kue yang lumer di mulut dengan perpaduan manis-asam selai yang sempurna. Tersedia dalam kemasan toples cantik yang elegan, cocok untuk lebaran atau hampers.",
+    "caption_ig": "🍍 Nastar yang lumer di mulut begitu digigit! Selai nanas asli dari buah segar, tidak terlalu manis. Kemasan toples cantik untuk hampers lebaran. Pre-order sekarang! #nastar #kuelebaran #hampers #kuekering",
+    "tagline": "Lumer di Mulut, Nanas Asli di Hati"
+  },
+  {
+    "id": 11,
+    "kategori": "makanan",
+    "nama_produk": "Baso Aci Garut Original",
+    "keunggulan": "kenyal, kuah gurih, level pedas pilihan, bahan alami",
+    "deskripsi_produk": "Baso aci khas Garut dengan tekstur kenyal sempurna dari tepung tapioka pilihan. Kuah gurih dari kaldu ayam asli dengan pilihan level pedas yang bisa disesuaikan selera. Dibuat dari bahan-bahan alami tanpa pengawet untuk cita rasa yang segar dan autentik.",
+    "caption_ig": "🍜 Baso aci Garut yang kenyalnya bikin ketagihan! Kuah gurih, pilih level pedasmu sendiri. Bahan alami, tanpa pengawet. Ready stock, DM untuk order! #basoaci #garut #kulinerindonesia #jajananenak",
+    "tagline": "Kenyal Sempurna, Gurih Tiada Dua"
+  },
+  {
+    "id": 12,
+    "kategori": "makanan",
+    "nama_produk": "Serundeng Kelapa Pedas Manis",
+    "keunggulan": "kelapa parut segar, rempah lengkap, tahan lama, cocok lauk pendamping",
+    "deskripsi_produk": "Serundeng kelapa pedas manis dibuat dari kelapa parut segar yang disangrai bersama rempah-rempah pilihan. Perpaduan rasa pedas, manis, dan gurih yang seimbang menjadikannya lauk pendamping yang istimewa untuk nasi putih maupun ketupat.",
+    "caption_ig": "🥥 Serundeng kelapa homemade yang bikin nasi makin enak! Kelapa segar, rempah lengkap, pedas manis gurih. Tahan 2 minggu di suhu ruang. Cocok buat lauk atau topping ketupat! #serundeng #laukpauk #masakanindonesia #homemade",
+    "tagline": "Gurih Rempah, Manis Alami Kelapa"
+  },
+  {
+    "id": 13,
+    "kategori": "makanan",
+    "nama_produk": "Siomay Bandung Frozen Pak Asep",
+    "keunggulan": "ikan tenggiri asli, tekstur padat, saus kacang spesial, siap kukus",
+    "deskripsi_produk": "Siomay Bandung frozen menggunakan ikan tenggiri asli segar yang memberikan tekstur padat dan rasa ikan yang kuat. Dilengkapi dengan saus kacang spesial resep turun-temurun yang kaya rasa. Praktis, tinggal kukus 15 menit langsung siap dihidangkan.",
+    "caption_ig": "🥟 Siomay Bandung asli ikan tenggiri, kini bisa nikmatin di rumah! Frozen, tinggal kukus 15 menit + saus kacang spesial. Enak banget! DM untuk order minimum 5 pcs. #siomay #siomayBandung #frozenfood #jajananenak",
+    "tagline": "Ikan Tenggiri Asli, Saus Kacang Spesial"
+  },
+  {
+    "id": 14,
+    "kategori": "makanan",
+    "nama_produk": "Dendeng Balado Sapi Minang",
+    "keunggulan": "daging tipis kering, balado merah merona, pedas autentik, kemasan vakum",
+    "deskripsi_produk": "Dendeng balado sapi khas Minang dengan irisan daging tipis yang dikeringkan sempurna lalu dibalut sambal balado merah merona yang pedas dan harum. Proses pembuatan tradisional menghasilkan cita rasa autentik yang sulit ditiru. Dikemas vakum untuk ketahanan maksimal.",
+    "caption_ig": "🔴 Dendeng balado sapi Minang yang merahnya menggoda! Daging tipis kering + balado autentik, pedasnya nampol. Kemasan vakum, bisa dikirim ke seluruh Indonesia. #dendeng #dendengbalado #masakanminang #oleholehpadang",
+    "tagline": "Merah Menggoda, Pedas Memanja Lidah"
+  },
+  {
+    "id": 15,
+    "kategori": "makanan",
+    "nama_produk": "Kue Lapis Surabaya Premium",
+    "keunggulan": "3 lapis warna, butter premium, lembut, cocok untuk hampers",
+    "deskripsi_produk": "Kue lapis Surabaya premium dengan tiga lapisan sempurna — kuning, coklat, kuning — menggunakan butter import berkualitas tinggi. Teksturnya lembut dan moist dengan rasa butter yang kaya. Cocok sebagai kue perayaan, hadiah, maupun hampers eksklusif.",
+    "caption_ig": "🎂 Kue Lapis Surabaya yang lapisannya sempurna! Pakai butter premium, lembut banget. Cocok buat kado atau hampers eksklusif. Pre-order H-3. DM sekarang! #kuelapis #lapissurabaya #kueultah #hampers",
+    "tagline": "Tiga Lapis Kelezatan, Satu Kenangan Manis"
+  },
+  {
+    "id": 16,
+    "kategori": "makanan",
+    "nama_produk": "Peyek Kacang Renyah Bu Tini",
+    "keunggulan": "kacang tanah besar, renyah tahan lama, bumbu kunyit khas, tanpa MSG",
+    "deskripsi_produk": "Peyek kacang tanah buatan Bu Tini dengan kacang tanah besar pilihan yang melimpah di setiap lembarnya. Bumbu kunyit khas memberikan warna kuning keemasan yang cantik dan aroma menggugah selera. Tekstur renyah yang tahan lama tanpa MSG.",
+    "caption_ig": "✨ Peyek kacang yang kacangnya buanyak! Buatan Bu Tini, renyah, tanpa MSG, bumbu kunyit khas. Cocok buat lauk atau oleh-oleh. Min order 5 bungkus. #peyek #peyekkacang #jajanantradisional #camilanrenyah",
+    "tagline": "Renyah Gurih, Kacangnya Selalu Melimpah"
+  },
+  {
+    "id": 17,
+    "kategori": "makanan",
+    "nama_produk": "Sate Lilit Bali Frozen",
+    "keunggulan": "daging ikan segar, bumbu Bali autentik, siap bakar/panggang, halal",
+    "deskripsi_produk": "Sate lilit Bali frozen menggunakan daging ikan segar yang digiling bersama bumbu Bali autentik berupa kelapa parut, serai, dan rempah pilihan. Tinggal bakar atau panggang untuk mendapatkan cita rasa Bali yang sesungguhnya di rumah. Sudah bersertifikat halal.",
+    "caption_ig": "🏝️ Rasain cita rasa Bali di rumah kamu! Sate Lilit Bali Frozen — daging ikan segar, bumbu autentik, tinggal bakar. Halal certified. Pesan sekarang! #satelilit #kulinerbali #frozenfood #halalcertified",
+    "tagline": "Cita Rasa Bali, Kini di Dapur Kamu"
+  },
+  {
+    "id": 18,
+    "kategori": "makanan",
+    "nama_produk": "Onde-onde Wijen Isi Kacang Hijau",
+    "keunggulan": "wijen melimpah, isian kacang hijau manis, digoreng segar, tanpa pengawet",
+    "deskripsi_produk": "Onde-onde tradisional dengan lapisan wijen yang melimpah dan isian kacang hijau manis yang lembut. Dibuat dari tepung ketan premium untuk tekstur kenyal yang sempurna. Digoreng segar setiap hari tanpa pengawet untuk menjaga kualitas dan kelezatan.",
+    "caption_ig": "🟡 Onde-onde wijennya tebal banget! Isian kacang hijau manis, kenyal, digoreng segar tiap hari. Tanpa pengawet. Tersedia mulai 5 pcs. DM sekarang! #ondeonde #kuetradisional #jajanpasar #homemade",
+    "tagline": "Wijen Berlapis, Manis Kacang Hijau"
+  },
+  {
+    "id": 19,
+    "kategori": "makanan",
+    "nama_produk": "Pempek Palembang Frozen Mpek-mpek Cindo",
+    "keunggulan": "ikan belida asli, cuko hitam spesial, berbagai ukuran, frozen ready",
+    "deskripsi_produk": "Pempek Palembang asli menggunakan ikan belida pilihan dengan tekstur kenyal dan rasa ikan yang kuat. Dilengkapi cuko hitam spesial dari gula aren, cabe rawit, dan bawang putih yang memberikan rasa pedas asam manis sempurna. Tersedia berbagai ukuran dalam kemasan frozen.",
+    "caption_ig": "🐟 Pempek Palembang asli ikan belida, kini bisa nikmatin di rumah! Frozen + cuko hitam spesial. Kenyal, gurih, cukonya pecah banget. DM untuk order! #pempek #pempekpalembang #kulinerpalembang #frozenfood",
+    "tagline": "Ikan Belida Asli, Cuko yang Bikin Ketagihan"
+  },
+  {
+    "id": 20,
+    "kategori": "makanan",
+    "nama_produk": "Bika Ambon Original Medan",
+    "keunggulan": "bersarang sempurna, harum pandan, lembut, resep turun-temurun",
+    "deskripsi_produk": "Bika Ambon original Medan dengan tekstur bersarang yang sempurna dan harum pandan yang khas. Dibuat menggunakan resep turun-temurun dengan fermentasi yang tepat untuk menghasilkan pori-pori yang cantik dan rasa yang autentik. Lembut dan tidak terlalu manis.",
+    "caption_ig": "💛 Bika Ambon Medan yang pori-porinya sempurna! Resep turun-temurun, harum pandan, lembut banget. Oleh-oleh khas Medan yang wajib dibawa. Pre-order sekarang! #bikaambon #oleholehmedan #kulinermedan #kuetradisional",
+    "tagline": "Bersarang Sempurna, Harum Pandan Sejati"
+  },
+  {
+    "id": 21,
+    "kategori": "minuman",
+    "nama_produk": "Kopi Arabika Flores Single Origin",
+    "keunggulan": "single origin Flores, medium roast, fruity notes, tanpa campuran",
+    "deskripsi_produk": "Kopi arabika single origin dari dataran tinggi Flores dengan proses natural yang menghasilkan profil rasa fruity dan floral yang khas. Roasting medium mempertahankan keasaman alami yang menyegarkan. Ditanam organik oleh petani lokal Flores tanpa pestisida kimia.",
+    "caption_ig": "☕ Kopi Arabika Flores yang bikin pagi makin bermakna! Single origin, medium roast, ada notes fruity-nya. Ditanam organik petani lokal. Coba sekarang! #kopi #kopiflores #arabika #singleorigin",
+    "tagline": "Dari Tanah Flores, Untuk Cangkir Kamu"
+  },
+  {
+    "id": 22,
+    "kategori": "minuman",
+    "nama_produk": "Teh Herbal Jahe Merah Rempah",
+    "keunggulan": "jahe merah asli, rempah lengkap, menghangatkan, tanpa gula tambahan",
+    "deskripsi_produk": "Teh herbal jahe merah dengan campuran rempah lengkap berupa kayu manis, cengkeh, dan kapulaga pilihan. Jahe merah asli memberikan rasa hangat yang kuat dan manfaat kesehatan yang nyata. Tanpa gula tambahan, cocok untuk program hidup sehat.",
+    "caption_ig": "🌿 Hangat dari dalam dengan Teh Herbal Jahe Merah Rempah! Jahe merah asli + rempah lengkap, tanpa gula tambahan. Cocok buat malam hari atau saat cuaca dingin. #teheherbal #jahemerah #minumankesehatan #rempah",
+    "tagline": "Kehangatan Rempah, Kesehatan Alami"
+  },
+  {
+    "id": 23,
+    "kategori": "minuman",
+    "nama_produk": "Wedang Uwuh Instan Yogyakarta",
+    "keunggulan": "rempah asli Yogyakarta, instan sachet, tanpa pengawet, serbaguna",
+    "deskripsi_produk": "Wedang uwuh instan khas Yogyakarta dengan rempah-rempah asli berupa kayu secang, kayu manis, jahe, dan cengkeh pilihan. Tersedia dalam kemasan sachet praktis, cukup diseduh dengan air panas untuk mendapatkan minuman herbal tradisional yang autentik. Tanpa pengawet dan pewarna buatan.",
+    "caption_ig": "🍵 Wedang Uwuh Yogyakarta kini dalam kemasan sachet praktis! Rempah asli, tinggal seduh, langsung merah cantik dan hangat. Cocok buat oleh-oleh atau stok di rumah. #wedanguwuh #yogyakarta #minumanherbal #rempah",
+    "tagline": "Khas Yogyakarta, Praktis Tinggal Seduh"
+  },
+  {
+    "id": 24,
+    "kategori": "minuman",
+    "nama_produk": "Sirup Markisa Asli Medan",
+    "keunggulan": "buah markisa asli, tanpa pewarna buatan, segar asam manis, botol kaca",
+    "deskripsi_produk": "Sirup markisa asli Medan dibuat dari buah markisa segar pilihan yang diperas langsung tanpa campuran pewarna buatan. Rasa asam manis yang segar dan aroma markisa yang kuat membuatnya sempurna sebagai minuman segar maupun campuran berbagai minuman. Dikemas dalam botol kaca food grade.",
+    "caption_ig": "🟣 Sirup Markisa Asli Medan — asam manisnya bikin seger banget! Tanpa pewarna buatan, dari buah markisa asli. Botol kaca, cocok buat koleksi atau oleh-oleh. #sirupmarkisa #medan #minumansegar #natural",
+    "tagline": "Asam Manis Asli Markisa Medan"
+  },
+  {
+    "id": 25,
+    "kategori": "minuman",
+    "nama_produk": "Cold Brew Kopi Robusta Gayo",
+    "keunggulan": "cold brew 18 jam, robusta Gayo, bold flavor, ready to drink, botol kaca",
+    "deskripsi_produk": "Cold brew kopi robusta Gayo yang diseduh dingin selama 18 jam untuk menghasilkan rasa kopi yang bold, kental, dan rendah asam. Robusta Gayo dipilih karena karakternya yang kuat dengan notes earthy dan coklat yang khas. Siap minum langsung dari botol kaca.",
+    "caption_ig": "🖤 Cold Brew Robusta Gayo — boldnya maksimal, asam minimal! Diseduh 18 jam, ready to drink. Buat kamu yang butuh kopi kuat tapi bersahabat di perut. DM untuk order! #coldbrew #kopirobusta #kopigayo #coffeelovers",
+    "tagline": "18 Jam Kesabaran, Bold Tanpa Kompromi"
+  },
+  {
+    "id": 26,
+    "kategori": "minuman",
+    "nama_produk": "Minuman Sinom Tradisional",
+    "keunggulan": "kunyit asem asli, menyegarkan, manfaat kesehatan, resep nenek",
+    "deskripsi_produk": "Sinom tradisional Jawa dibuat dari kunyit segar, asam jawa, dan gula jawa asli menggunakan resep nenek yang telah teruji selama puluhan tahun. Dipercaya membantu menjaga daya tahan tubuh dan melancarkan pencernaan. Rasa asam segar yang menyehatkan.",
+    "caption_ig": "💛 Sinom tradisional resep nenek, segarnya beda! Kunyit asem asli, gula jawa, bikin badan fit. Minuman sehat warisan leluhur yang wajib dicoba. #sinom #kunyitasem #minumantradisional #herbal",
+    "tagline": "Resep Nenek, Sehat Sejak Dulu"
+  },
+  {
+    "id": 27,
+    "kategori": "minuman",
+    "nama_produk": "Teh Rosella Kering Premium",
+    "keunggulan": "kelopak rosella kering pilihan, warna merah cerah, kaya antioksidan, caffeine free",
+    "deskripsi_produk": "Teh rosella kering premium dari kelopak bunga rosella pilihan yang dikeringkan secara alami tanpa bahan kimia. Warna merah cerah yang cantik dan rasa asam segar menjadi ciri khasnya. Kaya antioksidan dan bebas kafein, cocok untuk dikonsumsi kapan saja.",
+    "caption_ig": "🌺 Teh Rosella Premium — merahnya cantik, sehatnya nyata! Kelopak rosella pilihan, kaya antioksidan, bebas kafein. Seduh panas atau dingin, sama enaknya. #tehrosella #rosella #minumankesehatan #antioksidan",
+    "tagline": "Merah Alami, Antioksidan Nyata"
+  },
+  {
+    "id": 28,
+    "kategori": "minuman",
+    "nama_produk": "Susu Kedelai Organik Murni",
+    "keunggulan": "kedelai organik, tanpa pemanis buatan, fresh daily, pilihan rasa",
+    "deskripsi_produk": "Susu kedelai organik dari kedelai pilihan tanpa GMO yang diolah segar setiap hari. Tanpa pemanis buatan dan pengawet, hanya menggunakan gula aren alami untuk rasa manis yang sehat. Tersedia dalam pilihan rasa original, coklat, dan pandan.",
+    "caption_ig": "🥛 Susu kedelai organik fresh daily! Kedelai non-GMO, tanpa pemanis buatan, pakai gula aren alami. Ada 3 rasa: original, coklat, pandan. Sehat dan enak! #susukedelai #organik #plantbased #minumansehat",
+    "tagline": "Organik Murni, Segar Setiap Hari"
+  },
+  {
+    "id": 29,
+    "kategori": "minuman",
+    "nama_produk": "Kopi Luwak Lampung Asli",
+    "keunggulan": "luwak liar asli, proses natural, rasa halus tidak pahit, bersertifikat",
+    "deskripsi_produk": "Kopi luwak asli dari luwak liar di hutan Lampung dengan proses alami yang menghasilkan biji kopi berkualitas terbaik. Rasa yang halus, tidak terlalu pahit, dengan after taste yang menyenangkan dan aroma yang unik. Bersertifikat keaslian dari produsen terpercaya.",
+    "caption_ig": "☕ Kopi Luwak Lampung ASLI luwak liar! Rasanya halus, tidak pahit, aroma unik. Bersertifikat keaslian. Pengalaman ngopi premium yang sesungguhnya. DM untuk info lengkap! #kopiluwak #lampung #premiumcoffee #kopispesial",
+    "tagline": "Dari Alam Lampung, Kehalusan Tiada Tara"
+  },
+  {
+    "id": 30,
+    "kategori": "minuman",
+    "nama_produk": "Jamu Beras Kencur Segar",
+    "keunggulan": "beras kencur segar, gula aren asli, tanpa pengawet, ready minum",
+    "deskripsi_produk": "Jamu beras kencur segar dibuat dari kencur segar pilihan, beras yang direndam, dan gula aren asli yang diolah secara tradisional. Rasa manis segar yang khas dengan manfaat stamina yang nyata. Dibuat segar tanpa pengawet dan siap diminum.",
+    "caption_ig": "🌿 Jamu Beras Kencur fresh — bikin badan seger dan fit! Kencur asli, gula aren murni, tanpa pengawet. Dibuat tiap pagi, stok terbatas! #jamu #beraskencur #jamutradisional #minumankesehatan",
+    "tagline": "Segar Kencur, Fit Sepanjang Hari"
+  },
+  {
+    "id": 31,
+    "kategori": "minuman",
+    "nama_produk": "Teh Poci Tegal Premium",
+    "keunggulan": "teh hitam Tegal asli, diseduh poci tanah liat, gula batu, autentik",
+    "deskripsi_produk": "Teh poci Tegal premium menggunakan teh hitam pilihan dari perkebunan Tegal yang diseduh dalam poci tanah liat asli. Disajikan bersama gula batu untuk pengalaman minum teh yang autentik khas Tegal. Aroma tanah liat yang khas menambah cita rasa yang unik.",
+    "caption_ig": "🫖 Teh Poci Tegal asli — ngeteh yang beneran! Teh hitam Tegal, poci tanah liat, gula batu. Autentik dan nagih. Cocok buat hadiah atau nikmatin sendiri. #tehpoci #tegal #ngeteh #tehindonesia",
+    "tagline": "Poci Tanah Liat, Teh yang Sesungguhnya"
+  },
+  {
+    "id": 32,
+    "kategori": "minuman",
+    "nama_produk": "Minuman Cincau Hitam Segar",
+    "keunggulan": "cincau hitam asli, segar, menyejukkan, tanpa pewarna, natural",
+    "deskripsi_produk": "Cincau hitam segar dibuat dari daun cincau hitam asli yang diolah secara tradisional tanpa pewarna dan pengawet buatan. Tekstur lembut dan kenyal dengan rasa segar yang menyejukkan. Cocok dikonsumsi saat cuaca panas atau sebagai minuman penyegar.",
+    "caption_ig": "🖤 Cincau Hitam Segar — adem banget di tenggorokan! Dari daun cincau asli, tanpa pewarna, natural. Cocok buat buka puasa atau penghilang dahaga. Order sekarang! #cincau #minumansegar #natural #adem",
+    "tagline": "Hitam Alami, Segar Menyejukkan"
+  },
+  {
+    "id": 33,
+    "kategori": "minuman",
+    "nama_produk": "Kopi Toraja Robusta Dark Roast",
+    "keunggulan": "toraja asli, dark roast, smoky bold, single origin",
+    "deskripsi_produk": "Kopi Toraja robusta dengan roasting dark yang menghasilkan karakter smoky, bold, dan sedikit pahit yang disukai pecinta kopi sejati. Single origin dari perkebunan Toraja Utara dengan ketinggian optimal. Cocok untuk espresso atau kopi hitam tubruk.",
+    "caption_ig": "🏔️ Kopi Toraja Robusta Dark Roast — untuk jiwa-jiwa pemberani! Smoky, bold, pahit yang nikmat. Single origin Toraja Utara. Coba kalau kamu berani! #kopitoraja #darkroast #robusta #coffeelovers",
+    "tagline": "Smoky Bold dari Tanah Toraja"
+  },
+  {
+    "id": 34,
+    "kategori": "minuman",
+    "nama_produk": "Es Krim Rasa Tradisional Homemade",
+    "keunggulan": "rasa tradisional Indonesia, tanpa pemanis buatan, creamy, frozen",
+    "deskripsi_produk": "Es krim homemade dengan rasa-rasa tradisional Indonesia seperti dawet, es teler, dan bandrek. Dibuat dari bahan-bahan alami tanpa pemanis buatan dengan tekstur creamy yang lembut. Setiap rasa terinspirasi dari minuman tradisional Indonesia yang autentik.",
+    "caption_ig": "🍦 Es krim tapi rasa-rasa minuman Indonesia! Ada dawet, es teler, bandrek. Homemade, tanpa pemanis buatan, creamy. Unik dan nostalgia banget! DM untuk pre-order. #eskrim #eskrimhomemade #kulinerindonesia #traditional",
+    "tagline": "Es Krim Modern, Jiwa Tradisional"
+  },
+  {
+    "id": 35,
+    "kategori": "minuman",
+    "nama_produk": "Minuman Kunyit Tamarind Detox",
+    "keunggulan": "kunyit segar, asam jawa, lemon, detox alami, anti inflamasi",
+    "deskripsi_produk": "Minuman detox berbasis kunyit segar dengan tambahan asam jawa dan perasan lemon yang kaya vitamin C. Formula anti-inflamasi alami yang membantu membersihkan tubuh dari dalam. Tanpa gula tambahan, hanya menggunakan madu murni sebagai pemanis alami.",
+    "caption_ig": "💛 Start your detox journey with Kunyit Tamarind Detox! Kunyit segar + asam jawa + lemon, anti inflamasi alami. Madu murni sebagai pemanis. Tubuh lebih ringan dan sehat! #detox #kunyit #minumansehat #antiinflamasi",
+    "tagline": "Detox Alami, Tubuh Bersih dari Dalam"
+  },
+  {
+    "id": 36,
+    "kategori": "minuman",
+    "nama_produk": "Susu Murni Sapi Perah Lokal",
+    "keunggulan": "sapi perah lokal, pasteurisasi, fresh daily, tanpa pengencer",
+    "deskripsi_produk": "Susu murni segar dari sapi perah lokal yang dipasteurisasi untuk keamanan pangan tanpa mengurangi kandungan nutrisi. Tidak ada bahan pengencer atau penambah apapun, hanya susu murni berkualitas tinggi. Didistribusikan fresh setiap hari untuk kesegaran maksimal.",
+    "caption_ig": "🥛 Susu sapi perah lokal, murni 100%! Pasteurisasi, tanpa pengencer, fresh setiap pagi. Langsung dari peternak ke kamu. Sehat dan terjangkau! #susu #susumurni #freshdaily #petanaklokal",
+    "tagline": "Murni dari Peternak, Segar ke Kamu"
+  },
+  {
+    "id": 37,
+    "kategori": "minuman",
+    "nama_produk": "Teh Celup Daun Kelor Organik",
+    "keunggulan": "daun kelor organik, superfood, rich nutrisi, caffeine free, praktis",
+    "deskripsi_produk": "Teh celup daun kelor organik dari tanaman kelor yang ditanam secara organik tanpa pestisida. Daun kelor dikeringkan pada suhu rendah untuk mempertahankan kandungan nutrisi superfood-nya. Bebas kafein dan kaya akan vitamin, mineral, serta antioksidan.",
+    "caption_ig": "🌱 Teh Daun Kelor Organik — superfood dalam satu cangkir! Organik, bebas kafein, ribuan nutrisi. Tinggal celup, langsung sehat. Bagus banget buat ibu hamil dan menyusui! #tehkelor #daunmkelor #superfood #organik",
+    "tagline": "Superfood dalam Setiap Tegukan"
+  },
+  {
+    "id": 38,
+    "kategori": "minuman",
+    "nama_produk": "Bir Pletok Betawi Original",
+    "keunggulan": "rempah Betawi asli, hangat menyegarkan, tanpa alkohol, halal",
+    "deskripsi_produk": "Bir pletok khas Betawi dengan campuran rempah asli berupa jahe, serai, kayu secang, dan kayu manis yang menghasilkan minuman berwarna merah cantik. Hangatnya rempah berpadu dengan kesegaran yang unik. Tanpa alkohol dan halal untuk semua kalangan.",
+    "caption_ig": "❤️ Bir Pletok Betawi — merah cantik, hangat menyegarkan! Rempah Betawi asli, tanpa alkohol, halal. Minuman tradisional yang wajib dicoba. Cocok buat oleh-oleh dari Jakarta! #birpletok #betawi #kulinerbetawi #rempah",
+    "tagline": "Merah Rempah, Hangat Betawi Asli"
+  },
+  {
+    "id": 39,
+    "kategori": "minuman",
+    "nama_produk": "Yogurt Buah Lokal Homemade",
+    "keunggulan": "susu segar lokal, buah lokal asli, probiotik aktif, tanpa pengawet",
+    "deskripsi_produk": "Yogurt homemade dari susu segar lokal dengan kultur probiotik aktif yang menyehatkan pencernaan. Dicampur dengan buah-buah lokal segar seperti mangga, jambu, dan stroberi Cianjur. Tanpa pengawet dan pemanis buatan, manis alami dari buah segar.",
+    "caption_ig": "🍓 Yogurt Buah Lokal Homemade — probiotik aktif, buah segar lokal! Mangga, jambu, atau stroberi. Tanpa pengawet, dibuat fresh. Sehat dan enak banget! #yogurt #probiotik #buahlokal #homemade",
+    "tagline": "Probiotik Aktif, Buah Lokal Segar"
+  },
+  {
+    "id": 40,
+    "kategori": "minuman",
+    "nama_produk": "Kopi Blend Arabika Robusta Spesial",
+    "keunggulan": "blend 60:40, balanced flavor, medium roast, harga terjangkau",
+    "deskripsi_produk": "Kopi blend spesial dengan komposisi 60% arabika dan 40% robusta yang menghasilkan keseimbangan rasa sempurna. Arabika memberikan keasaman dan aroma floral sementara robusta menambah kekuatan dan crema yang tebal. Medium roast untuk mempertahankan kompleksitas rasa.",
+    "caption_ig": "☕ Kopi blend 60:40 yang perfectly balanced! Arabika + Robusta, medium roast. Harga terjangkau tapi kualitas bintang lima. Cobain deh, nggak bakal nyesel. #kopi #kopiblend #arabika #robusta",
+    "tagline": "60:40, Keseimbangan Rasa Sempurna"
+  },
+  {
+    "id": 41,
+    "kategori": "fashion",
+    "nama_produk": "Hijab Satin Premium Daily",
+    "keunggulan": "satin premium, anti kusut, glossy natural, berbagai warna",
+    "deskripsi_produk": "Hijab satin premium dengan bahan berkualitas tinggi yang memberikan tampilan glossy elegan namun tetap nyaman dipakai sehari-hari. Anti kusut dan mudah dibentuk berbagai style. Tersedia dalam 30 pilihan warna yang trendi sesuai tren fashion terkini.",
+    "caption_ig": "✨ Hijab Satin Premium yang bikin tampilan makin elegan! Anti kusut, 30 pilihan warna, cocok buat daily atau kondangan. Harga terjangkau, kualitas premium! #hijab #hijabsatin #hijabdaily #muslimfashion",
+    "tagline": "Elegan Setiap Hari, Premium Tanpa Batas"
+  },
+  {
+    "id": 42,
+    "kategori": "fashion",
+    "nama_produk": "Batik Tulis Solo Motif Parang",
+    "keunggulan": "batik tulis asli, motif parang klasik, bahan katun premium, handmade",
+    "deskripsi_produk": "Batik tulis asli Solo dengan motif parang klasik yang dikerjakan oleh pengrajin batik berpengalaman. Menggunakan bahan katun premium yang nyaman di kulit dan menyerap keringat. Setiap lembar kain merupakan karya unik dengan detail yang tidak bisa direplikasi mesin.",
+    "caption_ig": "🎨 Batik Tulis Solo asli motif parang — warisan budaya yang timeless! Handmade by pengrajin berpengalaman, katun premium. Investasi fashion yang berharga. DM untuk pilih motif! #batik #batiktulis #batikSolo #warisanbudaya",
+    "tagline": "Goresan Tangan, Warisan Abadi"
+  },
+  {
+    "id": 43,
+    "kategori": "fashion",
+    "nama_produk": "Tas Anyaman Rotan Lombok",
+    "keunggulan": "rotan Lombok asli, handmade, ramah lingkungan, desain kontemporer",
+    "deskripsi_produk": "Tas anyaman rotan asli Lombok yang dikerjakan tangan oleh pengrajin lokal dengan desain kontemporer yang memadukan tradisi dan modernitas. Bahan rotan alami yang kuat dan ramah lingkungan. Setiap tas memiliki keunikan tersendiri sebagai hasil karya tangan.",
+    "caption_ig": "🌿 Tas Anyaman Rotan Lombok — cantik, kuat, eco-friendly! Handmade pengrajin lokal, desain kontemporer. Cocok buat beach vibes atau daily use. Support lokal yuk! #tas #anyamanrotan #lombok #ecofashion",
+    "tagline": "Anyaman Tangan, Gaya Alam"
+  },
+  {
+    "id": 44,
+    "kategori": "fashion",
+    "nama_produk": "Kaos Oversize Sablon Manual",
+    "keunggulan": "cotton combed 30s, sablon manual, desain original, unisex",
+    "deskripsi_produk": "Kaos oversize premium dari bahan cotton combed 30s yang lembut dan breathable. Sablon manual dengan tinta berbasis air yang ramah lingkungan menghasilkan warna tajam dan tahan lama. Desain original yang tidak pasaran dengan siluet yang flattering untuk semua bentuk tubuh.",
+    "caption_ig": "👕 Kaos oversize yang beneran nyaman! Cotton combed 30s, sablon manual, desain original. Unisex, cocok buat semua. Limited edition tiap seri. DM untuk cek stock! #kaosoversize #streetwear #sablonmanual #localfashion",
+    "tagline": "Desain Original, Kenyamanan Nyata"
+  },
+  {
+    "id": 45,
+    "kategori": "fashion",
+    "nama_produk": "Sandal Kulit Sapi Asli Handmade",
+    "keunggulan": "kulit sapi asli, handmade, tahan lama, adjustable strap",
+    "deskripsi_produk": "Sandal kulit sapi asli yang dikerjakan tangan oleh pengrajin kulit berpengalaman di Yogyakarta. Menggunakan full grain leather yang semakin indah seiring waktu pemakaian. Desain adjustable strap memastikan kenyamanan untuk berbagai ukuran kaki.",
+    "caption_ig": "👡 Sandal Kulit Sapi Asli Handmade — makin lama makin cantik! Full grain leather, adjustable strap, handmade Yogyakarta. Investasi alas kaki yang worth it banget. #sandal #kulitsapi #handmade #yogyakarta",
+    "tagline": "Kulit Asli, Indah Makin Dipakai"
+  },
+  {
+    "id": 46,
+    "kategori": "fashion",
+    "nama_produk": "Dompet Batik Modern Pria",
+    "keunggulan": "motif batik modern, kulit sintetis premium, banyak slot, tipis elegan",
+    "deskripsi_produk": "Dompet pria dengan motif batik modern yang memadukan kebudayaan lokal dengan desain minimalis kontemporer. Menggunakan kulit sintetis premium yang kuat dan tahan air. Dilengkapi banyak slot kartu dan uang yang terorganisir dengan baik namun tetap tipis dan nyaman di kantong.",
+    "caption_ig": "💼 Dompet Batik Modern — bangga pakai lokal! Motif batik kekinian, kulit sintetis premium, banyak slot, tipis di kantong. Hadiah sempurna buat pria modern. #dompet #batikmodern #aksesorisPria #localproduct",
+    "tagline": "Motif Lokal, Gaya Global"
+  },
+  {
+    "id": 47,
+    "kategori": "fashion",
+    "nama_produk": "Kain Tenun Ikat NTT",
+    "keunggulan": "tenun ikat asli NTT, motif tradisional, pewarna alami, ATBM",
+    "deskripsi_produk": "Kain tenun ikat asli Nusa Tenggara Timur yang dibuat menggunakan alat tenun bukan mesin (ATBM) oleh tenun tradisional. Menggunakan pewarna alami dari tumbuhan lokal yang menghasilkan warna hangat dan khas. Motif tradisional yang sarat makna budaya dan filosofi leluhur.",
+    "caption_ig": "🌺 Kain Tenun Ikat NTT asli ATBM — kaya budaya, kaya makna! Pewarna alami, motif tradisional yang sarat filosofi. Koleksi warisan leluhur yang berharga. #tenun #tenunikat #NTT #warisanbudaya",
+    "tagline": "Setiap Helai Benang, Sebuah Cerita"
+  },
+  {
+    "id": 48,
+    "kategori": "fashion",
+    "nama_produk": "Topi Pandan Anyam Bali",
+    "keunggulan": "daun pandan asli, handwoven, UV protection, desain tropis",
+    "deskripsi_produk": "Topi anyam dari daun pandan asli Bali yang dianyam tangan dengan keahlian tinggi oleh pengrajin lokal. Desain tropis yang timeless memberikan perlindungan dari sinar UV sekaligus tampilan stylish. Ringan dan nyaman untuk berbagai aktivitas outdoor maupun fashion statement.",
+    "caption_ig": "🌴 Topi Pandan Anyam Bali — beach vibes all day! Daun pandan asli, handwoven, UV protection natural. Cocok buat liburan atau daily fashion. Support pengrajin Bali! #topi #anyamanpandan #bali #beachstyle",
+    "tagline": "Anyam Tangan Bali, Gaya Tropis Abadi"
+  },
+  {
+    "id": 49,
+    "kategori": "fashion",
+    "nama_produk": "Kemeja Batik Print Modern",
+    "keunggulan": "batik print kekinian, rayon viscose, adem, cocok formal casual",
+    "deskripsi_produk": "Kemeja batik print dengan motif kontemporer pada bahan rayon viscose premium yang lembut dan sangat adem. Desain modern yang cocok untuk acara formal maupun kasual, membuatnya sangat versatile untuk berbagai kesempatan. Potongan slim fit yang memberikan tampilan rapi.",
+    "caption_ig": "👔 Kemeja Batik Print yang adem dan kekinian! Bahan rayon viscose, motif modern, slim fit. Cocok formal atau kasual. Nasionalisme tetap stylish! #kemejabatik #batikmodern #fashionpria #batikprint",
+    "tagline": "Modern dan Bangga, Adem Sepanjang Hari"
+  },
+  {
+    "id": 50,
+    "kategori": "fashion",
+    "nama_produk": "Gelang Perak Ukir Bali",
+    "keunggulan": "perak 925, ukiran tangan Bali, desain unik, bisa custom nama",
+    "deskripsi_produk": "Gelang perak 925 dengan ukiran tangan khas Bali yang menampilkan motif bunga dan pola geometris tradisional. Setiap gelang diukir oleh pengrajin perak Celuk Bali yang berpengalaman. Tersedia layanan custom nama atau pesan untuk hadiah spesial yang berkesan.",
+    "caption_ig": "💍 Gelang Perak Ukir Bali — perhiasan yang bercerita! Perak 925, ukiran tangan Celuk Bali, bisa custom nama. Hadiah sempurna untuk orang tersayang. DM untuk custom! #gelang #perak #bali #handmadejewelry",
+    "tagline": "Ukiran Tangan, Kenangan Abadi"
+  },
+  {
+    "id": 51,
+    "kategori": "fashion",
+    "nama_produk": "Mukena Katun Jepang Premium",
+    "keunggulan": "katun jepang, anti kusut, motif elegan, set lengkap tas",
+    "deskripsi_produk": "Mukena dari bahan katun Jepang premium yang lembut, anti kusut, dan nyaman untuk sholat. Motif elegan dengan bordir halus yang memberikan kesan mewah. Tersedia dalam set lengkap dengan tas kantong berkualitas yang memudahkan penyimpanan dan penggunaan.",
+    "caption_ig": "🌸 Mukena Katun Jepang Premium — nyaman untuk ibadah, cantik dipandang! Anti kusut, motif elegan, set lengkap tas. Hadiah sempurna untuk ibu, istri, atau sahabat. #mukena #mukenakatun #hadiah #muslimah",
+    "tagline": "Nyaman Beribadah, Elegan Dipandang"
+  },
+  {
+    "id": 52,
+    "kategori": "fashion",
+    "nama_produk": "Sepatu Sneaker Kulit Lokal",
+    "keunggulan": "kulit sapi asli, handmade Bandung, limited edition, comfort sole",
+    "deskripsi_produk": "Sneaker kulit sapi asli handmade dari Bandung dengan desain minimal yang timeless. Menggunakan full grain leather berkualitas tinggi yang breathable dan tahan lama. Dilengkapi comfort sole berteknologi khusus untuk kenyamanan seharian. Setiap pasang merupakan limited edition.",
+    "caption_ig": "👟 Sneaker Kulit Lokal Handmade Bandung — stylish dan tahan lama! Full grain leather, comfort sole, limited edition. Bangga pakai produk lokal berkualitas dunia. DM untuk pilih ukuran! #sneaker #kulitlokal #bandung #localshoes",
+    "tagline": "Lokal Berkualitas, Global Bergaya"
+  },
+  {
+    "id": 53,
+    "kategori": "fashion",
+    "nama_produk": "Tas Kanvas Lukis Tangan",
+    "keunggulan": "kanvas tebal, lukisan tangan original, desain eksklusif, satu-satunya",
+    "deskripsi_produk": "Tas kanvas tebal dengan lukisan tangan original oleh seniman lokal. Setiap tas merupakan karya seni yang unik dan eksklusif, tidak ada yang sama. Menggunakan cat akrilik tahan air yang tidak mudah luntur. Cocok sebagai fashion statement sekaligus koleksi karya seni.",
+    "caption_ig": "🎨 Tas Kanvas Lukis Tangan — one of a kind! Setiap tas unik, tidak ada yang sama. Karya seniman lokal, cat akrilik tahan air. Bawa seni kemana pun kamu pergi! #tas #kanvas #artbag #handpainted",
+    "tagline": "Satu Karya, Satu Jiwa, Milikmu Sendiri"
+  },
+  {
+    "id": 54,
+    "kategori": "fashion",
+    "nama_produk": "Celana Palazzo Batik Wanita",
+    "keunggulan": "batik motif modern, palazzo wide leg, bahan adem, all size",
+    "deskripsi_produk": "Celana palazzo dengan motif batik modern yang trendi dan bahan yang sangat adem dan nyaman dipakai seharian. Model wide leg yang flattering untuk semua bentuk tubuh. Tersedia dalam pilihan all size dari S hingga XXL untuk inklusivitas yang nyata.",
+    "caption_ig": "🌸 Celana Palazzo Batik yang adem dan kekinian! Wide leg, motif batik modern, all size tersedia. Perfect buat kerja atau jalan-jalan. Batik nggak harus formal! #palazzo #batik #fashionwanita #allsize",
+    "tagline": "Nyaman Bergerak, Cantik Berbatik"
+  },
+  {
+    "id": 55,
+    "kategori": "fashion",
+    "nama_produk": "Ikat Pinggang Kulit Buaya Sintetis",
+    "keunggulan": "motif kulit buaya premium, kulit sintetis berkualitas, unisex, tahan lama",
+    "deskripsi_produk": "Ikat pinggang dengan motif emboss kulit buaya menggunakan kulit sintetis premium yang menyerupai kulit asli tanpa harus membahayakan satwa. Jahitan rapi dan buckle stainless steel yang kuat dan tahan karat. Desain klasik yang unisex dan timeless.",
+    "caption_ig": "⌚ Ikat Pinggang Motif Buaya Premium — mewah tanpa menyakiti satwa! Kulit sintetis berkualitas, buckle stainless, tahan lama. Tampil elegan, tetap etis. #ikatpinggang #belt #fashionpria #veganfashion",
+    "tagline": "Mewah Tanpa Batas, Etis Tanpa Kompromi"
+  },
+  {
+    "id": 56,
+    "kategori": "fashion",
+    "nama_produk": "Kerudung Pashmina Wolfis Premium",
+    "keunggulan": "bahan wolfis premium, tidak panas, mudah dibentuk, warna tidak pudar",
+    "deskripsi_produk": "Kerudung pashmina wolfis premium dengan bahan berkualitas tinggi yang tidak panas namun tetap menutupi dengan sempurna. Tekstur lembut yang mudah dibentuk berbagai gaya hijab mulai dari simple hingga elaborate. Warna yang tidak mudah pudar meski sering dicuci.",
+    "caption_ig": "💜 Pashmina Wolfis Premium yang adem banget! Nggak panas, gampang dibentuk, warna awet. Cocok buat daily atau kondangan. 50+ pilihan warna tersedia. #pashmina #hijab #wolfis #kerudung",
+    "tagline": "Adem Seharian, Warna Bertahan Lama"
+  },
+  {
+    "id": 57,
+    "kategori": "fashion",
+    "nama_produk": "Tote Bag Ecobag Sablon Lokal",
+    "keunggulan": "canvas tebal, sablon water-based, eco-friendly, desain lokal",
+    "deskripsi_produk": "Tote bag canvas tebal dengan sablon menggunakan tinta water-based ramah lingkungan dan desain original yang terinspirasi budaya lokal Indonesia. Kuat menampung hingga 10kg dengan jahitan yang rapi. Mendukung gerakan pengurangan plastik dengan desain yang tetap stylish.",
+    "caption_ig": "🌿 Tote Bag Lokal yang kuat dan eco-friendly! Canvas tebal, sablon water-based, desain budaya Indonesia. Kurangi plastik, tetap stylish. Beli 1 = support seniman lokal! #totebag #ecobag #ramahlingkungan #localdesign",
+    "tagline": "Kuat Membawa, Bijak untuk Bumi"
+  },
+  {
+    "id": 58,
+    "kategori": "fashion",
+    "nama_produk": "Anting Perak Filigri Jogja",
+    "keunggulan": "perak 925 filigri, keahlian Kotagede, desain intricate, ringan",
+    "deskripsi_produk": "Anting perak filigri dari Kotagede Yogyakarta dengan teknik anyaman kawat perak tipis yang sangat halus dan intricate. Dibuat oleh pengrajin perak berkeahlian tinggi yang mewarisi tradisi berabad-abad. Ringan dan nyaman dipakai namun tampak sangat mewah dan detail.",
+    "caption_ig": "✨ Anting Perak Filigri Kotagede — keindahan yang tak ternilai! Teknik anyaman kawat perak, handmade pengrajin Jogja. Ringan, cantik, mewah. Hadiah istimewa untuk wanita istimewa. #anting #perak #filigri #jogja",
+    "tagline": "Kehalusan Seni dalam Setiap Detail"
+  },
+  {
+    "id": 59,
+    "kategori": "fashion",
+    "nama_produk": "Kalung Kayu Eboni Sulawesi",
+    "keunggulan": "kayu eboni asli Sulawesi, natural oil finish, desain unik, hypoallergenic",
+    "deskripsi_produk": "Kalung dari kayu eboni asli Sulawesi dengan finishing natural oil yang menonjolkan keindahan serat kayu alami. Kayu eboni terkenal dengan warna gelap yang elegan dan kepadatan tinggi. Hypoallergenic dan cocok untuk kulit sensitif, ringan namun memberikan statement yang kuat.",
+    "caption_ig": "🌳 Kalung Kayu Eboni Sulawesi — keindahan alam dalam perhiasan! Natural oil finish, serat kayu unik, hypoallergenic. Unik, sustainable, dan powerful statement. #kalung #kayueboni #sulawesi #naturaljewelry",
+    "tagline": "Keindahan Alam, Elegan di Lehermu"
+  },
+  {
+    "id": 60,
+    "kategori": "fashion",
+    "nama_produk": "Sarung Tenun Bugis Premium",
+    "keunggulan": "tenun Bugis asli, sutra sintetis premium, motif kotak-kotak khas, bisa formal",
+    "deskripsi_produk": "Sarung tenun Bugis premium dengan motif kotak-kotak khas yang dibuat dari sutra sintetis berkualitas tinggi yang memberikan kilap elegan. Cocok untuk sholat, acara formal, maupun penggunaan kasual sehari-hari. Warna-warna cerah khas Bugis yang tidak pudar.",
+    "caption_ig": "🟦 Sarung Tenun Bugis Premium — tradisi yang timeless! Motif kotak khas Bugis, bahan premium, cocok sholat hingga kondangan. Bangga budaya Sulawesi! #sarung #tenunbugis #bugis #sulawesi",
+    "tagline": "Motif Bugis, Elegan Tanpa Batas"
+  },
+  {
+    "id": 61,
+    "kategori": "kosmetik",
+    "nama_produk": "Masker Wajah Clay Kunyit Putih",
+    "keunggulan": "kunyit putih asli, clay detox, brightening, BPOM terdaftar",
+    "deskripsi_produk": "Masker wajah clay dengan kandungan kunyit putih asli yang kaya kurkuminoid untuk mencerahkan kulit secara alami. Clay kaolin membantu menyerap minyak berlebih dan membersihkan pori-pori. Formula ringan tanpa paraben, sudah terdaftar BPOM untuk keamanan yang terjamin.",
+    "caption_ig": "✨ Masker Clay Kunyit Putih — glowing dari bahan alami! Kunyit putih asli, clay detox, brightening effect. BPOM terdaftar, aman untuk semua jenis kulit. Coba sekarang! #masker #skincare #kunyitputih #glowing",
+    "tagline": "Alami Cerahkan, Clay Bersihkan"
+  },
+  {
+    "id": 62,
+    "kategori": "kosmetik",
+    "nama_produk": "Serum Vitamin C Rosehip Oil",
+    "keunggulan": "vitamin C 15%, rosehip oil, anti aging, brightening, vegan",
+    "deskripsi_produk": "Serum brightening dengan konsentrasi vitamin C 15% yang dipadukan dengan rosehip oil kaya asam lemak omega untuk hasil anti-aging yang optimal. Formula vegan dan cruelty-free tanpa kandungan alkohol yang mengeringkan. Tekstur ringan yang cepat meresap tanpa rasa lengket.",
+    "caption_ig": "🌹 Serum Vitamin C Rosehip Oil — anti aging yang efektif! Vitamin C 15% + rosehip oil, brightening + anti aging. Vegan, cruelty-free. Kulit glowing dan awet muda! #serum #vitaminci #rosehip #antiaging",
+    "tagline": "Vitamin C Bekerja, Kulit Bersinar"
+  },
+  {
+    "id": 63,
+    "kategori": "kosmetik",
+    "nama_produk": "Sabun Mandi Susu Kambing Natural",
+    "keunggulan": "susu kambing asli, handmade cold process, melembabkan, tanpa SLS",
+    "deskripsi_produk": "Sabun mandi handmade dengan metode cold process menggunakan susu kambing segar asli yang kaya protein dan lemak alami untuk melembabkan kulit. Tanpa sodium lauryl sulfate yang keras, cocok untuk kulit sensitif dan anak-anak. Lather yang creamy dan lembut.",
+    "caption_ig": "🐐 Sabun Susu Kambing Handmade — kulitmu bakal lembut banget! Cold process, susu kambing asli, tanpa SLS. Cocok untuk kulit sensitif dan bayi. Natural skincare dari alam! #sabun #susukambing #handmadesoap #naturalskincare",
+    "tagline": "Susu Kambing Asli, Kulit Lembut Nyata"
+  },
+  {
+    "id": 64,
+    "kategori": "kosmetik",
+    "nama_produk": "Lip Balm Madu Lebah Hutan",
+    "keunggulan": "madu lebah hutan asli, beeswax, pelembab alami, SPF alami",
+    "deskripsi_produk": "Lip balm dari madu lebah hutan asli Kalimantan yang dipadukan dengan beeswax alami sebagai pelembab bibir yang intens. Memberikan perlindungan SPF alami dari sinar UV dan mencegah bibir pecah-pecah. Tanpa pewarna buatan dengan warna natural yang mempercantik bibir.",
+    "caption_ig": "🍯 Lip Balm Madu Lebah Hutan Kalimantan — bibir lembut alami! Madu asli + beeswax, SPF natural, tanpa pewarna buatan. Bye bye bibir kering! #lipbalm #madu #naturalskincare #bibirkering",
+    "tagline": "Madu Asli, Bibir Lembut Alami"
+  },
+  {
+    "id": 65,
+    "kategori": "kosmetik",
+    "nama_produk": "Toner Beras Fermentasi",
+    "keunggulan": "air beras fermentasi, brightening, pore tightening, traditional recipe",
+    "deskripsi_produk": "Toner berbasis air beras fermentasi dengan resep tradisional yang dimodifikasi dengan teknologi modern untuk kestabilan formula. Kaya akan inositol dan vitamin B yang membantu mencerahkan, mengencangkan pori-pori, dan melembutkan tekstur kulit. pH balance untuk kulit yang sehat.",
+    "caption_ig": "✨ Toner Beras Fermentasi — rahasia glowing nenek moyang! Air beras fermentasi, brightening + pore tightening. Formula tradisional, teknologi modern. Kulit halus mulus! #toner #berastermentasi #skincare #glowing",
+    "tagline": "Tradisi Beras, Glowing Modern"
+  },
+  {
+    "id": 66,
+    "kategori": "kosmetik",
+    "nama_produk": "Minyak Zaitun Extra Virgin Perawatan",
+    "keunggulan": "extra virgin olive oil, cold pressed, multifungsi, 100% natural",
+    "deskripsi_produk": "Minyak zaitun extra virgin cold pressed berkualitas tinggi untuk perawatan kulit, rambut, dan bibir. Kaya antioksidan dan vitamin E yang melembabkan dan meremajakan kulit secara mendalam. Multifungsi sebagai serum wajah, perawatan rambut, dan pelembab tubuh.",
+    "caption_ig": "🫒 Minyak Zaitun Extra Virgin — satu produk sejuta manfaat! Cold pressed, untuk kulit wajah, rambut, dan bibir. 100% natural, no chemical. Skincare simpel yang efektif! #minyakzaitun #oliveoil #naturalskincare #multifungsi",
+    "tagline": "Satu Minyak, Sejuta Manfaat Alam"
+  },
+  {
+    "id": 67,
+    "kategori": "kosmetik",
+    "nama_produk": "Scrub Kopi Arabika Tubuh",
+    "keunggulan": "kopi arabika kasar, anti cellulite, exfoliant alami, aroma kopi segar",
+    "deskripsi_produk": "Body scrub dari bubuk kopi arabika kasar yang membantu mengangkat sel kulit mati dan meratakan tekstur kulit. Kandungan kafein membantu sirkulasi darah dan mengurangi tampilan selulit. Aroma kopi segar yang menyegarkan menjadikan mandi sebagai pengalaman spa.",
+    "caption_ig": "☕ Scrub Kopi Arabika — SPA experience di kamar mandi kamu! Anti cellulite, exfoliant alami, aroma kopi segar. Kulit halus mulus setelah mandi. Yuk coba! #scrub #scrubkopi #bodyscrub #spalife",
+    "tagline": "Aroma Kopi, Kulit Mulus Spa"
+  },
+  {
+    "id": 68,
+    "kategori": "kosmetik",
+    "nama_produk": "Lidah Buaya Gel Murni Organik",
+    "keunggulan": "aloe vera 99%, organik, multipurpose, after sun, hair treatment",
+    "deskripsi_produk": "Gel lidah buaya murni organik dengan konsentrasi aloe vera 99% yang diproses minimal untuk mempertahankan enzim dan vitamin alaminya. Multifungsi sebagai after sun care, pelembab wajah, treatment rambut, dan pereda iritasi kulit. Cocok untuk semua jenis kulit termasuk sensitif.",
+    "caption_ig": "💚 Aloe Vera Gel 99% Organik — skincare yang jujur! Murni, organik, multipurpose. Untuk wajah, rambut, after sun. Kulit tenang dan terhidrasi. Satu produk untuk segalanya! #aloevera #lidahbuaya #organik #naturalskincare",
+    "tagline": "99% Murni, 100% Alami"
+  },
+  {
+    "id": 69,
+    "kategori": "kosmetik",
+    "nama_produk": "Parfum Lokal Eau de Parfum Nusantara",
+    "keunggulan": "wangi khas Indonesia, longlasting 8 jam, halal, botol elegan",
+    "deskripsi_produk": "Eau de parfum lokal dengan wangi terinspirasi kekayaan alam Nusantara — perpaduan melati, kayu gaharu, dan rempah tropis yang eksotis. Ketahanan wangi hingga 8 jam dengan proyeksi yang cukup. Formulasi halal dan botol kaca elegan yang bisa dijadikan dekorasi.",
+    "caption_ig": "🌺 Parfum Lokal Nusantara — wangi Indonesia yang mendunia! Melati + gaharu + rempah tropis, longlasting 8 jam. Halal certified, botol elegan. Bangga pakai lokal! #parfum #parfumlokal #nusantara #wangiindonesia",
+    "tagline": "Wangi Nusantara, Bangga Indonesia"
+  },
+  {
+    "id": 70,
+    "kategori": "kosmetik",
+    "nama_produk": "Masker Rambut Kemiri Jawa",
+    "keunggulan": "minyak kemiri asli, menghitamkan rambut, anti rontok, tradisional",
+    "deskripsi_produk": "Masker rambut dengan minyak kemiri asli dari Jawa yang dikenal secara tradisional untuk menghitamkan rambut, menguatkan akar, dan mengurangi kerontokan. Formula diperkaya dengan ekstrak lidah buaya dan argan oil untuk hasil yang lebih optimal. Aroma alami yang khas.",
+    "caption_ig": "🖤 Masker Rambut Kemiri Jawa — rahasia rambut hitam berkilau! Minyak kemiri asli, anti rontok, menghitamkan alami. Resep leluhur yang terbukti! #maskerrambut #kemiri #perawatanrambut #rambutsehat",
+    "tagline": "Kemiri Jawa, Hitam Berkilau Alami"
+  },
+  {
+    "id": 71,
+    "kategori": "kosmetik",
+    "nama_produk": "Sunscreen Mineral SPF 50 PA++++",
+    "keunggulan": "zinc oxide, SPF 50, PA++++, lightweight, cocok kulit berminyak",
+    "deskripsi_produk": "Sunscreen mineral dengan zinc oxide yang memberikan perlindungan SPF 50 PA++++ terhadap sinar UVA dan UVB. Formula lightweight yang tidak menyebabkan whitecast berlebihan dan cocok untuk kulit berminyak. Diperkaya niacinamide untuk efek pencerahkan tambahan.",
+    "caption_ig": "☀️ Sunscreen Mineral SPF 50 PA++++ — perlindungan maksimal! Zinc oxide, ringan, no greasy, cocok kulit berminyak. Plus niacinamide untuk glowing. Sunscreen wajib setiap hari! #sunscreen #spf50 #skincare #sunprotection",
+    "tagline": "Lindungi Maksimal, Ringan di Kulit"
+  },
+  {
+    "id": 72,
+    "kategori": "kosmetik",
+    "nama_produk": "Minyak Telon Plus Herbal Bayi",
+    "keunggulan": "minyak telon tradisional, tambah lavender dan chamomile, aman bayi, menghangatkan",
+    "deskripsi_produk": "Minyak telon tradisional yang diperkaya dengan lavender dan chamomile untuk efek menenangkan pada bayi. Formula menghangatkan tubuh bayi dengan lembut dan melindungi dari angin. Aman untuk kulit sensitif bayi dengan dermatological tested.",
+    "caption_ig": "👶 Minyak Telon Plus Herbal — kehangatan tradisional, kenyamanan modern! Telon + lavender + chamomile. Bayi hangat, tenang, tidur nyenyak. Aman untuk newborn. #minyaktelon #perawatanbayi #herbal #babycare",
+    "tagline": "Hangat Tradisional, Nyaman Modern"
+  },
+  {
+    "id": 73,
+    "kategori": "kosmetik",
+    "nama_produk": "Lulur Tradisional Jawa Kuning",
+    "keunggulan": "rempah jawa asli, kunyit beras, melembabkan, ritual kecantikan",
+    "deskripsi_produk": "Lulur tradisional Jawa dengan formula kunyit dan beras yang telah digunakan selama berabad-abad dalam ritual kecantikan keraton Jawa. Mengangkat sel kulit mati, mencerahkan, dan melembabkan kulit secara menyeluruh. Aroma rempah khas yang memberikan pengalaman spa autentik.",
+    "caption_ig": "💛 Lulur Tradisional Jawa — kecantikan warisan keraton! Kunyit + beras + rempah Jawa. Kulit cerah, lembut, dan wangi rempah. Ritual kecantikan yang mewah dan alami. #lulur #lulurtradisional #jawaskincare #beraskunyit",
+    "tagline": "Ritual Keraton, Kecantikan Abadi"
+  },
+  {
+    "id": 74,
+    "kategori": "kosmetik",
+    "nama_produk": "Shampoo Bar Aloe Vera Cengkeh",
+    "keunggulan": "shampoo bar plastik-free, aloe vera, cengkeh anti ketombe, zero waste",
+    "deskripsi_produk": "Shampoo bar eco-friendly dengan formula aloe vera dan minyak cengkeh yang efektif mengatasi ketombe dan rambut kering. Satu bar shampoo setara dengan 3 botol shampoo cair, sangat ekonomis. Zero waste packaging yang membantu mengurangi sampah plastik.",
+    "caption_ig": "🌿 Shampoo Bar Zero Waste — rambut sehat, bumi selamat! Aloe vera + cengkeh, anti ketombe. 1 bar = 3 botol shampoo. Packaging biodegradable. Skincare yang peduli bumi! #shampobar #zerowaste #ecofriendly #rambutsehat",
+    "tagline": "Rambut Sehat, Bumi Lebih Selamat"
+  },
+  {
+    "id": 75,
+    "kategori": "kosmetik",
+    "nama_produk": "Bedak Tabur Tepung Beras Natural",
+    "keunggulan": "tepung beras alami, oil control, no talc, halal, natural finish",
+    "deskripsi_produk": "Bedak tabur dari tepung beras alami yang memberikan efek matte dan mengontrol minyak berlebih tanpa talc yang berbahaya. Formula ringan yang tidak menyumbat pori-pori dengan natural finish yang cocok untuk berbagai warna kulit Asia. Halal certified dan vegan.",
+    "caption_ig": "✨ Bedak Tabur Tepung Beras — natural dan aman! No talc, oil control, natural finish. Halal certified, vegan. Cocok untuk semua warna kulit Asia. Cantik alami tanpa khawatir! #bedak #tepungberas #halalcosmetic #naturalbeauty",
+    "tagline": "Beras Alami, Cantik Bebas Khawatir"
+  },
+  {
+    "id": 76,
+    "kategori": "kosmetik",
+    "nama_produk": "Serum Rambut Argan Oil Maroko",
+    "keunggulan": "argan oil murni, anti frizz, shine booster, heat protection",
+    "deskripsi_produk": "Serum rambut dengan argan oil murni dari Maroko yang memberikan kilap, menghaluskan rambut kasar dan bercabang, serta melindungi dari panas styling. Formula ringan yang tidak membuat rambut berminyak namun memberikan nutrisi mendalam untuk rambut yang lebih sehat.",
+    "caption_ig": "💫 Serum Argan Oil Maroko — rambut kilap bebas frizz! Anti frizz, heat protection, shine booster. Cocok sebelum blow dry atau straightening. Rambut salon vibes setiap hari! #serum #arganoil #rambutkilap #antifrizz",
+    "tagline": "Argan Murni Maroko, Rambut Bersinar"
+  },
+  {
+    "id": 77,
+    "kategori": "kosmetik",
+    "nama_produk": "Facial Wash Charcoal Bamboo",
+    "keunggulan": "activated charcoal bambu, deep cleansing, pore minimizing, sulfate free",
+    "deskripsi_produk": "Facial wash dengan activated charcoal bambu yang bekerja seperti magnet menarik kotoran, minyak berlebih, dan racun dari dalam pori-pori. Formula sulfate-free yang tidak membuat kulit tertarik dan kering. Efektif membersihkan mendalam sekaligus meminimalkan tampilan pori-pori.",
+    "caption_ig": "🖤 Facial Wash Charcoal Bamboo — pori-pori bersih maksimal! Activated charcoal bambu, deep cleansing, pore minimizing. Sulfate free, nggak bikin kulit ketarik. Bebas kotoran! #facialwash #charcoal #skincare #porescleansing",
+    "tagline": "Charcoal Bambu, Pori Bersih Sempurna"
+  },
+  {
+    "id": 78,
+    "kategori": "kosmetik",
+    "nama_produk": "Krim Pemutih Ketiak Natural",
+    "keunggulan": "niacinamide, kojic acid, natural, tanpa merkuri, BPOM",
+    "deskripsi_produk": "Krim pencerah area ketiak dengan niacinamide dan kojic acid yang bekerja sinergis untuk meratakan warna kulit secara aman dan efektif. Tanpa merkuri, hidrokuinon, dan bahan berbahaya lainnya. Sudah terdaftar BPOM dengan formula yang telah diuji dermatologis.",
+    "caption_ig": "💜 Krim Pemutih Ketiak Natural — aman dan efektif! Niacinamide + kojic acid, tanpa merkuri, BPOM terdaftar. Kulit ketiak cerah alami. No more insecure! #krimketiak #pemutihketiak #bpom #skincare",
+    "tagline": "Cerah Natural, Aman Terpercaya"
+  },
+  {
+    "id": 79,
+    "kategori": "kosmetik",
+    "nama_produk": "Pelembab Wajah Aloe Hyaluronic",
+    "keunggulan": "aloe vera + hyaluronic acid, lightweight, non comedogenic, untuk semua kulit",
+    "deskripsi_produk": "Pelembab wajah ringan dengan perpaduan aloe vera dan hyaluronic acid yang memberikan hidrasi mendalam tanpa rasa berat atau lengket. Non-comedogenic yang aman untuk kulit berjerawat. Tekstur gel-cream yang cepat meresap dan memberikan efek plump pada kulit.",
+    "caption_ig": "💧 Pelembab Aloe + Hyaluronic Acid — hidrasi maksimal, ringan banget! Non-comedogenic, untuk kulit berjerawat sekalipun. Kulit plump dan lembab seharian. Skincare routine yang nggak ribet! #pelembab #moisturizer #hyaluronicacid #skincare",
+    "tagline": "Hidrasi Mendalam, Ringan di Kulit"
+  },
+  {
+    "id": 80,
+    "kategori": "kosmetik",
+    "nama_produk": "Minyak Rambut Kelapa Murni VCO",
+    "keunggulan": "VCO cold pressed, anti dandruff, deep conditioning, multipurpose",
+    "deskripsi_produk": "Virgin Coconut Oil cold pressed murni tanpa proses pemanasan untuk mempertahankan semua nutrisi dan enzim alaminya. Efektif sebagai deep conditioning rambut, anti ketombe, dan pelembab kulit. Aroma kelapa segar yang alami dan menyegarkan.",
+    "caption_ig": "🥥 VCO Cold Pressed Murni — rambut dan kulit sehat alami! Anti ketombe, deep conditioning, multipurpose. Aroma kelapa segar. Satu produk banyak kegunaan! #vco #minyakkelapa #virgincoconutoil #perawatanrambut",
+    "tagline": "Murni Kelapa, Sehat Alami Terjaga"
+  },
+  {
+    "id": 81,
+    "kategori": "kerajinan",
+    "nama_produk": "Topeng Kayu Barong Bali",
+    "keunggulan": "kayu pule asli Bali, ukiran tangan detail, gold leaf, dekorasi premium",
+    "deskripsi_produk": "Topeng Barong Bali dari kayu pule pilihan yang diukir tangan oleh seniman Bali berpengalaman. Detail ukiran yang sangat halus dengan aplikasi gold leaf untuk aksen emas yang mewah. Dipercaya memiliki nilai spiritual dan cocok sebagai dekorasi premium atau koleksi seni.",
+    "caption_ig": "🎭 Topeng Barong Bali — seni ukir yang magis! Kayu pule asli, ukiran tangan detail, gold leaf. Nilai seni + spiritual yang tinggi. Hiaskan ruangan dengan keindahan Bali! #topengbarong #bali #ukiran #dekorasi",
+    "tagline": "Ukiran Tangan, Keindahan Bali yang Abadi"
+  },
+  {
+    "id": 82,
+    "kategori": "kerajinan",
+    "nama_produk": "Gerabah Hias Lombok Motif Sasak",
+    "keunggulan": "tanah liat Lombok, motif Sasak tradisional, hand painted, unik",
+    "deskripsi_produk": "Gerabah hias dari tanah liat hitam khas Lombok yang dibentuk dan dilukis tangan dengan motif tradisional Sasak yang kaya makna. Setiap karya adalah unik karena dikerjakan sepenuhnya secara manual. Cocok sebagai vas bunga, dekorasi ruangan, atau cendera mata.",
+    "caption_ig": "🏺 Gerabah Lombok Motif Sasak — keindahan tradisi di rumahmu! Tanah liat asli, hand painted, motif Sasak. Setiap piece unik dan bermakna. Dekorasi rumah yang berbudaya! #gerabah #lombok #sasak #handiwork",
+    "tagline": "Tanah Lombok, Seni yang Bercerita"
+  },
+  {
+    "id": 83,
+    "kategori": "kerajinan",
+    "nama_produk": "Batik Cap Madura Motif Serat Kayu",
+    "keunggulan": "cap tembaga asli, motif serat kayu khas Madura, warna alam, autentik",
+    "deskripsi_produk": "Batik cap Madura dengan cap tembaga tradisional bermotif serat kayu khas yang hanya ada di Madura. Pewarna alami dari tanaman lokal menghasilkan warna coklat, hitam, dan merah bata yang karakteristik dan tidak mudah pudar. Dibuat oleh pengrajin batik generasi ketiga.",
+    "caption_ig": "🎨 Batik Cap Madura Motif Serat Kayu — unik dan autentik! Cap tembaga asli, pewarna alam, motif khas Madura. Warisan generasi ketiga yang tak ternilai. #batik #madurase #batikcap #warisanbudaya",
+    "tagline": "Cap Tembaga, Warna Alam, Autentik Madura"
+  },
+  {
+    "id": 84,
+    "kategori": "kerajinan",
+    "nama_produk": "Anyaman Bambu Tempat Buah",
+    "keunggulan": "bambu petung pilihan, anyaman detail, natural finish, eco-friendly",
+    "deskripsi_produk": "Tempat buah dari anyaman bambu petung pilihan dengan teknik anyaman tradisional yang kuat dan detail. Natural finish mempertahankan keindahan warna dan tekstur bambu asli. Ramah lingkungan dan biodegradable sebagai alternatif plastik yang elegan.",
+    "caption_ig": "🌿 Tempat Buah Anyaman Bambu — natural dan cantik! Bambu petung pilihan, anyaman tradisional, natural finish. Eco-friendly, tahan lama. Dekorasi dapur yang sustainable! #anyamanbambu #bamboo #ecofriendly #dekorasi",
+    "tagline": "Alam di Meja Makanmu"
+  },
+  {
+    "id": 85,
+    "kategori": "kerajinan",
+    "nama_produk": "Wayang Kulit Kuningan Premium",
+    "keunggulan": "kulit kerbau terbaik, ukiran halus, cat tradisional, sertifikat keaslian",
+    "deskripsi_produk": "Wayang kulit dari kulit kerbau pilihan dengan ukiran yang sangat halus dan detail menggunakan teknik tatah sungging tradisional Jawa. Pewarnaan menggunakan cat tradisional berbahan alam yang tahan lama. Dilengkapi sertifikat keaslian dari Dinas Kebudayaan.",
+    "caption_ig": "🎭 Wayang Kulit Kuningan Premium — warisan budaya yang tak ternilai! Kulit kerbau terbaik, tatah sungging tradisional. Sertifikat keaslian. Investasi budaya yang bermakna! #wayang #wayangkulit #jawatengah #warisandunia",
+    "tagline": "Tatah Sungging, Warisan Tak Ternilai"
+  },
+  {
+    "id": 86,
+    "kategori": "kerajinan",
+    "nama_produk": "Keranjang Eceng Gondok Kalimantan",
+    "keunggulan": "eceng gondok terurai, handwoven, ramah lingkungan, modern design",
+    "deskripsi_produk": "Keranjang multifungsi dari eceng gondok yang dikeringkan dan dianyam oleh pengrajin Kalimantan. Mengubah tanaman invasif menjadi produk bernilai tinggi yang ramah lingkungan. Desain modern yang cocok untuk keranjang belanja, penyimpanan, maupun dekorasi.",
+    "caption_ig": "🌿 Keranjang Eceng Gondok — ugly plant jadi beautiful art! Handwoven, eco-friendly, design modern. Mengubah tanaman invasif jadi produk bernilai. Support pengrajin Kalimantan! #ecenggondok #handwoven #ecofriendly #kalimantan",
+    "tagline": "Dari Invasif ke Inovatif"
+  },
+  {
+    "id": 87,
+    "kategori": "kerajinan",
+    "nama_produk": "Ukiran Kayu Jepara Relief Bunga",
+    "keunggulan": "kayu jati pilihan, ukiran relief halus, desain bunga klasik, durable",
+    "deskripsi_produk": "Panel ukiran kayu jati dari Jepara dengan relief bunga klasik yang dikerjakan oleh pengrajin ukir berpengalaman. Kayu jati kering yang tahan rayap dan cuaca ekstrem menjamin keawetan puluhan tahun. Cocok sebagai panel dinding, headboard, atau hiasan pintu.",
+    "caption_ig": "🌸 Panel Ukir Kayu Jati Jepara — keindahan yang awet puluhan tahun! Relief bunga klasik, kayu jati tahan rayap. Dekorasi premium untuk rumah impianmu. DM untuk ukuran custom! #ukiranjepara #kayujati #jepara #woodcarving",
+    "tagline": "Ukiran Jepara, Keindahan Abadi"
+  },
+  {
+    "id": 88,
+    "kategori": "kerajinan",
+    "nama_produk": "Miniatur Rumah Adat Joglo",
+    "keunggulan": "kayu pinus, detail arsitektur akurat, hand painted, dekorasi unik",
+    "deskripsi_produk": "Miniatur rumah adat Joglo dari kayu pinus berkualitas dengan detail arsitektur yang akurat termasuk bagian pendapa, pringgitan, dan dalem. Dicat tangan dengan warna-warna tradisional Jawa yang autentik. Sempurna sebagai dekorasi, suvenir, atau edukasi budaya.",
+    "caption_ig": "🏠 Miniatur Rumah Joglo — arsitektur Jawa dalam genggamanmu! Kayu pinus, detail akurat, hand painted. Unik sebagai dekorasi atau hadiah berbudaya. #rumahjogl #miniatur #javaculture #dekorasi",
+    "tagline": "Arsitektur Jawa, Dalam Genggamanmu"
+  },
+  {
+    "id": 89,
+    "kategori": "kerajinan",
+    "nama_produk": "Tikar Pandan Anyam Sumatera",
+    "keunggulan": "daun pandan asli Sumatera, anyaman rapat kuat, pewarna alami, tahan lama",
+    "deskripsi_produk": "Tikar pandan asli Sumatera dengan anyaman rapat dan kuat menggunakan teknik tradisional yang diwariskan turun-temurun. Pewarna alami dari tumbuhan Sumatera menghasilkan motif warna-warni yang cantik. Permukaan yang halus dan nyaman untuk duduk maupun tidur.",
+    "caption_ig": "🌿 Tikar Pandan Anyam Sumatera — tradisi yang masih relevan! Daun pandan asli, anyaman rapat, pewarna alami. Nyaman, kuat, dan cantik. Dekorasi rumah yang authentic! #tikar #pandan #sumatera #kerajinanlokal",
+    "tagline": "Anyam Kuat, Indah Alami Sumatera"
+  },
+  {
+    "id": 90,
+    "kategori": "kerajinan",
+    "nama_produk": "Guci Keramik Motif Batik",
+    "keunggulan": "keramik Dinoyo, motif batik, high fire glaze, food safe",
+    "deskripsi_produk": "Guci keramik dari sentra keramik Dinoyo Malang dengan motif batik yang diaplikasikan menggunakan teknik sgraffito dan glaze warna. Dibakar pada suhu tinggi untuk kekuatan dan keindahan glasir yang optimal. Food safe untuk digunakan sebagai wadah makanan dan minuman.",
+    "caption_ig": "🏺 Guci Keramik Batik Dinoyo — perpaduan dua warisan budaya! Motif batik pada keramik, high fire glaze, food safe. Fungsional sekaligus artistik. Dekorasi meja yang wow! #keramik #batik #dinoyo #malang",
+    "tagline": "Batik Bertemu Keramik, Budaya Berpadu"
+  },
+  {
+    "id": 91,
+    "kategori": "kerajinan",
+    "nama_produk": "Patung Garuda Kayu Albesia",
+    "keunggulan": "kayu albesia pilihan, ukiran detail, finishing natural, simbol kebanggaan",
+    "deskripsi_produk": "Patung Garuda dari kayu albesia pilihan dengan ukiran detail yang menampilkan keagungan lambang negara Indonesia. Finishing natural oil yang menonjolkan keindahan serat kayu. Cocok sebagai dekorasi kantor, rumah, atau hadiah kenegaraan yang bermakna.",
+    "caption_ig": "🦅 Patung Garuda Kayu Albesia — simbol kebanggaan dalam karya seni! Ukiran detail, finishing natural. Cocok buat dekorasi kantor atau rumah. Bangga Indonesia! #patunggaruda #garuda #kayualbesia #dekorasi",
+    "tagline": "Garuda Berjaya, Ukiran Berjiwa"
+  },
+  {
+    "id": 92,
+    "kategori": "kerajinan",
+    "nama_produk": "Kipas Tangan Batik Kayu Cendana",
+    "keunggulan": "kayu cendana harum, batik tulis, portable, souvenir eksklusif",
+    "deskripsi_produk": "Kipas tangan dengan gagang kayu cendana harum dan layar batik tulis asli. Perpaduan unik antara kerajinan kayu cendana Nusa Tenggara dan seni batik Jawa. Aroma cendana yang khas menambah pengalaman menggunakan kipas ini. Cocok sebagai souvenir eksklusif atau koleksi.",
+    "caption_ig": "🌸 Kipas Batik Kayu Cendana — souvenir eksklusif Indonesia! Kayu cendana harum + batik tulis asli. Unik, harum, penuh budaya. Oleh-oleh terbaik dari Indonesia! #kipas #batik #cendana #souvenir",
+    "tagline": "Harum Cendana, Elok Batik Sejati"
+  },
+  {
+    "id": 93,
+    "kategori": "kerajinan",
+    "nama_produk": "Lampu Hias Bambu Motif Wayang",
+    "keunggulan": "bambu pilihan, motif wayang laser cut, warm light effect, unik",
+    "deskripsi_produk": "Lampu hias dari bambu pilihan dengan motif wayang yang dipotong secara presisi menghasilkan bayangan motif yang indah saat dinyalakan. Warm light LED yang hemat energi memberikan suasana ruangan yang cozy dan bernuansa budaya. Karya seni yang fungsional.",
+    "caption_ig": "✨ Lampu Hias Bambu Wayang — rumahmu jadi galeri seni! Motif wayang laser cut, warm light LED. Pas banget buat bikin suasana cozy berbudaya. Limited stock! #lampu #lampuhias #wayang #bambu",
+    "tagline": "Cahaya Berbudaya, Rumah Berseni"
+  },
+  {
+    "id": 94,
+    "kategori": "kerajinan",
+    "nama_produk": "Tempat Pensil Kulit Batik Custom",
+    "keunggulan": "kulit sintetis premium, motif batik, bisa custom nama, handmade",
+    "deskripsi_produk": "Tempat pensil dari kulit sintetis premium dengan motif batik yang elegan. Tersedia layanan custom nama atau inisial yang dicetak atau diemboss pada permukaan. Handmade dengan jahitan rapi dan zipper YKK berkualitas. Sempurna untuk hadiah wisuda atau ulang tahun.",
+    "caption_ig": "🎁 Tempat Pensil Kulit Batik Custom — hadiah yang berkesan! Kulit premium, motif batik, bisa custom nama. Handmade, zipper YKK. Hadiah wisuda yang beda dari biasanya! #hadiah #wisuda #custommade #batik",
+    "tagline": "Custom Namamu, Hadiah Tak Terlupakan"
+  },
+  {
+    "id": 95,
+    "kategori": "kerajinan",
+    "nama_produk": "Cermin Ukir Kayu Jati Bingkai Motif",
+    "keunggulan": "kayu jati tua, ukiran motif klasik, cermin anti pecah, wall decor premium",
+    "deskripsi_produk": "Cermin dinding dengan bingkai kayu jati tua yang diukir motif bunga dan daun klasik oleh pengrajin Jepara. Menggunakan cermin berkualitas anti pecah dengan lapisan anti-jamur. Bingkai finishing natural yang menonjolkan keindahan kayu jati tua yang khas.",
+    "caption_ig": "🪞 Cermin Ukir Kayu Jati — wall decor yang bikin tamu terpesona! Kayu jati tua, ukiran klasik, cermin anti pecah. Timeless dan bernilai tinggi. Hubungi kami untuk ukuran custom! #cermin #dekorasi #kayujati #walldecor",
+    "tagline": "Ukiran Tua, Kilau Abadi"
+  },
+  {
+    "id": 96,
+    "kategori": "kerajinan",
+    "nama_produk": "Boneka Wayang Golek Sunda",
+    "keunggulan": "kayu sengon asli, cat tradisional, busana sutra, representasi tokoh asli",
+    "deskripsi_produk": "Boneka wayang golek Sunda dari kayu sengon asli dengan detail pahat yang halus dan pengecatan menggunakan cat tradisional. Busana dari kain sutra dengan ornamen benang emas. Setiap boneka merepresentasikan tokoh pewayangan dengan kostum dan detail yang akurat.",
+    "caption_ig": "🎭 Wayang Golek Sunda — seni pertunjukan dalam satu boneka! Kayu sengon, cat tradisional, busana sutra. Koleksi budaya Sunda yang menawan. Sempurna untuk kolektor atau dekorasi! #wayanggolek #sunda #senibudaya #koleksi",
+    "tagline": "Boneka Sunda, Seni yang Hidup"
+  },
+  {
+    "id": 97,
+    "kategori": "kerajinan",
+    "nama_produk": "Diorama Rumah Adat Toraja",
+    "keunggulan": "detail arsitektur akurat, kayu pilihan, miniatur handmade, edukasi budaya",
+    "deskripsi_produk": "Diorama rumah adat Tongkonan Toraja dengan detail arsitektur yang sangat akurat, termasuk atap melengkung khas dan ornamen ukiran tradisional. Dikerjakan dari kayu pilihan dengan cat yang autentik. Cocok untuk koleksi, dekorasi premium, atau media edukasi budaya Toraja.",
+    "caption_ig": "🏠 Diorama Tongkonan Toraja — arsitektur unik dalam satu karya! Detail akurat, handmade, kayu pilihan. Edukasi dan dekorasi premium sekaligus. Toraja culture forever! #tongkonan #toraja #miniatur #budaya",
+    "tagline": "Tongkonan Mini, Budaya Toraja Nyata"
+  },
+  {
+    "id": 98,
+    "kategori": "kerajinan",
+    "nama_produk": "Keramik Porselen Kaligrafi Islam",
+    "keunggulan": "porselen putih bersih, kaligrafi tangan, glaze emas, dekorasi islami",
+    "deskripsi_produk": "Keramik porselen putih bersih dengan kaligrafi Islam yang ditulis tangan menggunakan teknik underglaze dan aksen emas yang mewah. Setiap kaligrafi ditulis oleh kaligrafer berpengalaman dengan pilihan ayat Al-Quran atau asmaul husna. Cocok sebagai dekorasi rumah atau masjid.",
+    "caption_ig": "✨ Keramik Kaligrafi Islam — keindahan spiritual di rumahmu! Porselen putih, kaligrafi tangan, glaze emas. Ayat pilihan atau asmaul husna. Hiaskan rumah dengan keindahan islami! #kaligrafi #dekorasiislami #porselen #islamicart",
+    "tagline": "Kaligrafi Suci, Keindahan Abadi"
+  },
+  {
+    "id": 99,
+    "kategori": "kerajinan",
+    "nama_produk": "Tas Rajut Benang Organik",
+    "keunggulan": "benang organik katun, rajutan tangan, desain minimalis, sustainable",
+    "deskripsi_produk": "Tas rajut dari benang organik katun alami yang dirajut tangan dengan desain minimalis kontemporer. Menggunakan teknik rajut yang kuat untuk ketahanan penggunaan sehari-hari. Sustainable fashion yang ramah lingkungan dengan kemasan biodegradable.",
+    "caption_ig": "🌿 Tas Rajut Organik — fashion yang bertanggung jawab! Benang katun organik, rajutan tangan, desain minimalis. Sustainable fashion yang tetap cantik. Support slow fashion! #tasrajut #organik #sustainablefashion #handmade",
+    "tagline": "Dirajut Tangan, Dijaga Bumi"
+  },
+  {
+    "id": 100,
+    "kategori": "kerajinan",
+    "nama_produk": "Hiasan Dinding Makrame Boho",
+    "keunggulan": "tali katun alami, desain boho modern, handmade, dekorasi aesthetic",
+    "deskripsi_produk": "Hiasan dinding makrame dari tali katun alami dengan desain boho modern yang aesthetic. Setiap karya dikerjakan tangan dengan teknik simpul makrame yang beragam menghasilkan pola yang unik dan indah. Cocok untuk ruang tamu, kamar tidur, atau studio foto.",
+    "caption_ig": "🪢 Hiasan Dinding Makrame Boho — rumah jadi aesthetic banget! Tali katun alami, desain boho modern, handmade. Perfect buat ruang tamu atau kamar. Studio foto vibes! #makrame #bohostyle #walldecor #handmade",
+    "tagline": "Simpul Indah, Rumah Makin Aesthetic"
+  }
+]

@@ -1,0 +1,34 @@
+# Core framework
+streamlit==1.35.0
+
+# LLM — Groq (LLaMA 3.1 open-source model)
+# groq>=0.13.0 required for compatibility with httpx>=0.28
+groq>=1.0.0
+
+# LangChain (opsional, untuk abstraksi pipeline)
+langchain==0.2.5
+# langchain-groq 0.1.6 requires groq<1; upgrade jika diperlukan
+langchain-groq==0.1.6
+langchain-community==0.2.5
+
+# Embedding — local, no API key needed
+sentence-transformers==3.0.1
+
+# Vector database
+faiss-cpu==1.8.0
+
+# Utilities
+python-dotenv==1.0.1
+numpy==1.26.4
+pandas==2.2.2
+
+# Evaluasi
+rouge-score==0.1.2
+bert-score==0.3.13
+scikit-learn==1.5.0
+
+# Notebook
+jupyter==1.0.0
+ipykernel==6.29.4
+matplotlib==3.9.0
+seaborn==0.13.2

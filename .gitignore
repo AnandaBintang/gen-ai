@@ -1,0 +1,45 @@
+# ============================================================
+# UMKM Copywriting Generator — .gitignore
+# ============================================================
+
+# Environment & secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# FAISS index (di-generate ulang via `python embedder.py`)
+index/faiss.index
+index/chunks.pkl
+
+# Evaluation outputs (di-generate ulang via `python evaluator.py`)
+outputs/
+
+# Jupyter Notebook checkpoints
+notebooks/.ipynb_checkpoints/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sentence Transformers model cache
+.cache/
