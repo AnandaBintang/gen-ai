@@ -3,7 +3,7 @@ streamlit==1.35.0
 
 # LLM — Groq (LLaMA 3.1 open-source model)
 # groq>=0.13.0 required for compatibility with httpx>=0.28
-groq>=1.0.0
+groq>=0.13.0,<1
 
 # LangChain (opsional, untuk abstraksi pipeline)
 langchain==0.2.5
