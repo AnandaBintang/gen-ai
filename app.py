@@ -14,13 +14,16 @@
 #    "raw_output"         : str  ← dipakai fallback parser di app.py
 # ─────────────────────────────────────────────────────────────────────────────
 
-import re
 import html
+import re
 import time
+
 import streamlit as st
+import streamlit.components.v1 as components
 
 # ── INTEGRASI RAG PIPELINE ───────────────────────────────────────────────────
 from rag_pipeline import RAGPipeline
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 
@@ -31,7 +34,7 @@ from rag_pipeline import RAGPipeline
 st.set_page_config(
     page_title="UMKM Copywriting Generator",
     page_icon="✍️",
-    layout="centered",          # Single-column terpusat
+    layout="centered",  # Single-column terpusat
     initial_sidebar_state="collapsed",
 )
 
@@ -40,7 +43,8 @@ st.set_page_config(
 # CSS — Tema Putih / Biru / Hitam, Minimalis & Bersih
 # ─────────────────────────────────────────────────────────────────────────────
 
-st.markdown("""
+st.markdown(
+    """
 <style>
 /* ── Google Font ── */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
@@ -239,6 +243,29 @@ div[data-testid="stTextArea"] textarea::placeholder {
     opacity: 1 !important;
 }
 
+/* ── Tabs ── */
+div[data-testid="stTabs"] button[role="tab"] {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    color: #5A6473 !important;
+    padding: 0.5rem 1.1rem !important;
+    border-radius: 8px 8px 0 0 !important;
+    opacity: 1 !important;
+}
+div[data-testid="stTabs"] button[role="tab"]:hover {
+    color: #1565C0 !important;
+    background: #EBF3FF !important;
+}
+div[data-testid="stTabs"] button[role="tab"][aria-selected="true"] {
+    color: #1565C0 !important;
+    border-bottom: 3px solid #1565C0 !important;
+    background: transparent !important;
+}
+div[data-testid="stTabs"] [data-testid="stTabContent"] {
+    padding-top: 1rem !important;
+}
+
 /* ── Copy button (HTML native) ── */
 .copy-btn {
     display: inline-flex;
@@ -310,12 +337,15 @@ details summary {
     color: #9CA3AF;
 }
 </style>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Inisialisasi RAGPipeline (cached)
 # ─────────────────────────────────────────────────────────────────────────────
+
 
 @st.cache_resource(show_spinner=False)
 def load_pipeline() -> RAGPipeline:
@@ -333,12 +363,12 @@ def load_pipeline() -> RAGPipeline:
 
 _EMOJI_RE = re.compile(
     "["
-    "\U0001F300-\U0001F9FF"
-    "\U00002600-\U000027BF"
-    "\U0001FA00-\U0001FAFF"
-    "\U00002702-\U000027B0"
-    "\U0000FE00-\U0000FE0F"
-    "\U0001F1E0-\U0001F1FF"
+    "\U0001f300-\U0001f9ff"
+    "\U00002600-\U000027bf"
+    "\U0001fa00-\U0001faff"
+    "\U00002702-\U000027b0"
+    "\U0000fe00-\U0000fe0f"
+    "\U0001f1e0-\U0001f1ff"
     "]+",
     flags=re.UNICODE,
 )
@@ -392,10 +422,10 @@ def limit_emoji(text: str, max_count: int = 2) -> str:
 #   - Markdown bold **                 : "**TAGLINE**:"
 #   Grup 1 = nama label seksi (digunakan untuk routing)
 _SECTION_SPLIT_RE = re.compile(
-    r"(?:^|\n)\s*\*{0,2}"           # awal baris, opsional **
+    r"(?:^|\n)\s*\*{0,2}"  # awal baris, opsional **
     r"(DESKRIPSI|CAPTION[\s_]IG|TAGLINE)"  # nama seksi
-    r"\*{0,2}"                      # opsional **
-    r"\s*:\s*",                     # titik dua dengan spasi opsional di kiri/kanan
+    r"\*{0,2}"  # opsional **
+    r"\s*:\s*",  # titik dua dengan spasi opsional di kiri/kanan
     re.IGNORECASE,
 )
 
@@ -443,8 +473,8 @@ def robust_parse(raw_output: str) -> dict:
     # parts[3], parts[4] = label seksi 2, konten seksi 2, dst.
     i = 1  # mulai dari indeks 1 (lewati teks pra-seksi di indeks 0)
     while i + 1 < len(parts):
-        label   = parts[i].strip()       # nama seksi dari capturing group
-        content = parts[i + 1].strip()   # isi konten seksi
+        label = parts[i].strip()  # nama seksi dari capturing group
+        content = parts[i + 1].strip()  # isi konten seksi
         key = _normalize_key(label)
         if key in result:
             result[key] = content
@@ -471,31 +501,27 @@ def extract_fields(result: dict) -> tuple[str, str, str]:
       result["raw_output"]   → teks mentah LLM (fallback)
     ────────────────────────────────────────────────────────────────────
     """
-    deskripsi  = (result.get("deskripsi",  "") or "").strip()
+    deskripsi = (result.get("deskripsi", "") or "").strip()
     caption_ig = (result.get("caption_ig", "") or "").strip()
-    tagline    = (result.get("tagline",    "") or "").strip()
+    tagline = (result.get("tagline", "") or "").strip()
     raw_output = result.get("raw_output", "") or ""
 
     # Deteksi kegagalan parser pipeline: caption atau tagline kosong,
     # ATAU deskripsi mengandung label seksi lain (output menumpuk)
-    _section_marker = re.compile(
-        r"(caption[\s_]ig|tagline)", re.IGNORECASE
-    )
+    _section_marker = re.compile(r"(caption[\s_]ig|tagline)", re.IGNORECASE)
     pipeline_failed = (
-        not caption_ig
-        or not tagline
-        or bool(_section_marker.search(deskripsi))
+        not caption_ig or not tagline or bool(_section_marker.search(deskripsi))
     )
 
     if pipeline_failed and raw_output:
         fb = robust_parse(raw_output)
         # Ambil nilai dari fallback hanya jika lebih baik dari pipeline
         if fb.get("deskripsi"):
-            deskripsi  = fb["deskripsi"]
+            deskripsi = fb["deskripsi"]
         if fb.get("caption_ig"):
             caption_ig = fb["caption_ig"]
         if fb.get("tagline"):
-            tagline    = fb["tagline"]
+            tagline = fb["tagline"]
 
     return deskripsi or "—", caption_ig or "—", tagline or "—"
 
@@ -504,34 +530,69 @@ def extract_fields(result: dict) -> tuple[str, str, str]:
 # Copy to Clipboard (JavaScript)
 # ─────────────────────────────────────────────────────────────────────────────
 
+
 def copy_button(text: str, btn_id: str, label: str = "Salin") -> None:
-    escaped = (
-        text
-        .replace("\\", "\\\\")
-        .replace("`", "\\`")
-        .replace("$", "\\$")
-    )
-    html = f"""
+    escaped = text.replace("\\", "\\\\").replace("`", "\\`").replace("$", "\\$")
+    html_content = f"""
+    <style>
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{ background: transparent; }}
+        .copy-btn {{
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.45rem 1.1rem;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #1565C0;
+            background: #EBF3FF;
+            border: 1.5px solid #BDD4F5;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+            letter-spacing: 0.01em;
+            box-shadow: 0 1px 4px rgba(21,101,192,0.10);
+        }}
+        .copy-btn:hover {{
+            background: #1565C0;
+            color: #FFFFFF;
+            border-color: #1565C0;
+            box-shadow: 0 3px 10px rgba(21,101,192,0.25);
+        }}
+        .copy-btn:active {{
+            transform: scale(0.97);
+        }}
+    </style>
     <button class="copy-btn" id="{btn_id}" onclick="
         navigator.clipboard.writeText(`{escaped}`)
             .then(()=>{{
                 var b=document.getElementById('{btn_id}');
-                b.textContent='✓ Tersalin';
-                setTimeout(()=>{{b.textContent='{label}';}}, 2000);
+                b.innerHTML='&#10003;&nbsp;Tersalin!';
+                b.style.background='#166534';
+                b.style.color='#FFFFFF';
+                b.style.borderColor='#166534';
+                setTimeout(()=>{{
+                    b.innerHTML='&#128203;&nbsp;{label}';
+                    b.style.background='';
+                    b.style.color='';
+                    b.style.borderColor='';
+                }}, 2000);
             }})
             .catch(()=>{{
                 var b=document.getElementById('{btn_id}');
-                b.textContent='Gagal';
-                setTimeout(()=>{{b.textContent='{label}';}}, 2000);
+                b.textContent='Gagal ✕';
+                setTimeout(()=>{{b.innerHTML='&#128203;&nbsp;{label}';}}, 2000);
             }});
-    ">{label}</button>
+    ">&#128203;&nbsp;{label}</button>
     """
-    st.components.v1.html(html, height=46)
+    components.html(html_content, height=46)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Validasi Input
 # ─────────────────────────────────────────────────────────────────────────────
+
 
 def validate_inputs(nama: str, unggulan: str) -> list[str]:
     errors = []
@@ -550,7 +611,8 @@ def validate_inputs(nama: str, unggulan: str) -> list[str]:
 # Hero Header
 # ─────────────────────────────────────────────────────────────────────────────
 
-st.markdown("""
+st.markdown(
+    """
 <div class="hero">
     <div class="hero-eyebrow">RAG + LLaMA 3.1 · Groq API · FAISS</div>
     <h1 class="hero-title">UMKM <span>Copywriting</span> Generator</h1>
@@ -559,7 +621,9 @@ st.markdown("""
         untuk usaha kamu — otomatis, cepat, dan berbasis AI open-source.
     </p>
 </div>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -662,20 +726,20 @@ if generate_clicked:
         deskripsi_raw, caption_raw, tagline_raw = extract_fields(result)
 
         # Post-processing emoji
-        deskripsi  = strip_emoji(deskripsi_raw)  or "—"
-        tagline    = strip_emoji(tagline_raw)     or "—"
+        deskripsi = strip_emoji(deskripsi_raw) or "—"
+        tagline = strip_emoji(tagline_raw) or "—"
         caption_ig = limit_emoji(caption_raw, 2) if caption_raw != "—" else "—"
 
         # ── Metadata strip ─────────────────────────────────────────────────
         mode = result.get("mode", "zeroshot")
         n_rel = len(result.get("relevant_docs", []))
         n_ret = len(result.get("retrieved_docs", []))
-        thr   = result.get("similarity_threshold", 0.45)
+        thr = result.get("similarity_threshold", 0.45)
 
         mode_label = {
-            "rag":      ("RAG — Few-shot",     "rag"),
-            "partial":  ("Partial — 1 Ref",    "partial"),
-            "zeroshot": ("Zero-shot",           "zero"),
+            "rag": ("RAG — Few-shot", "rag"),
+            "partial": ("Partial — 1 Ref", "partial"),
+            "zeroshot": ("Zero-shot", "zero"),
         }.get(mode, ("Zero-shot", "zero"))
 
         st.markdown(
@@ -689,57 +753,62 @@ if generate_clicked:
             unsafe_allow_html=True,
         )
 
-        # ── Output Cards ───────────────────────────────────────────────────
-        # Semua konten kartu di-render dalam SATU st.markdown block.
-        # Ini memastikan teks berada di dalam kotak kartu (bukan di luar).
-        # html.escape() mencegah HTML injection dari output LLM:
-        #   - Karakter &, <, > di-escape → aman
-        #   - Emoji TIDAK di-escape (bukan HTML special char)
-        #   - Newline dikonversi ke <br> agar terbaca
+        # ── Output Tabs — Deskripsi / Tagline / Caption ──────────────────
+        # html.escape() mencegah HTML injection dari output LLM.
+        tab_desk, tab_tag, tab_cap = st.tabs(
+            ["📝 Deskripsi", "✨ Tagline", "📸 Caption IG"]
+        )
 
-        # Card 1 — Deskripsi Produk
-        desk_safe = html.escape(deskripsi)  # escape HTML, jaga emoji & teks
-        st.markdown(f"""
-        <div class="out-card">
-            <div class="out-card-header">
-                <span class="out-card-badge">01</span>
-                <span class="out-card-title">Deskripsi Produk</span>
+        # Tab 1 — Deskripsi Produk
+        with tab_desk:
+            desk_safe = html.escape(deskripsi)
+            st.markdown(
+                f"""
+            <div class="out-card">
+                <div class="out-card-header">
+                    <span class="out-card-badge">01</span>
+                    <span class="out-card-title">Deskripsi Produk</span>
+                </div>
+                <div class="out-card-body">{desk_safe}</div>
             </div>
-            <div class="out-card-body">{desk_safe}</div>
-        </div>
-        """, unsafe_allow_html=True)
-        copy_button(deskripsi, btn_id="copy_desk", label="Salin Deskripsi")
+            """,
+                unsafe_allow_html=True,
+            )
+            copy_button(deskripsi, btn_id="copy_desk", label="Salin Deskripsi")
 
-        st.markdown("<div style='height:0.5rem'></div>", unsafe_allow_html=True)
-
-        # Card 2 — Caption Instagram
-        # html.escape() + replace('\n','<br>') → emoji & hashtag aman tampil
-        cap_safe = html.escape(caption_ig).replace("\n", "<br>")
-        st.markdown(f"""
-        <div class="out-card">
-            <div class="out-card-header">
-                <span class="out-card-badge">02</span>
-                <span class="out-card-title">Caption Instagram</span>
+        # Tab 2 — Tagline
+        with tab_tag:
+            tag_safe = html.escape(tagline)
+            st.markdown(
+                f"""
+            <div class="out-card">
+                <div class="out-card-header">
+                    <span class="out-card-badge">02</span>
+                    <span class="out-card-title">Tagline</span>
+                </div>
+                <div class="out-card-body-tagline">&ldquo;{tag_safe}&rdquo;</div>
             </div>
-            <div class="out-card-body" style="white-space: pre-wrap;">{cap_safe}</div>
-        </div>
-        """, unsafe_allow_html=True)
-        copy_button(caption_ig, btn_id="copy_cap", label="Salin Caption")
+            """,
+                unsafe_allow_html=True,
+            )
+            copy_button(tagline, btn_id="copy_tag", label="Salin Tagline")
 
-        st.markdown("<div style='height:0.5rem'></div>", unsafe_allow_html=True)
-
-        # Card 3 — Tagline
-        tag_safe = html.escape(tagline)
-        st.markdown(f"""
-        <div class="out-card">
-            <div class="out-card-header">
-                <span class="out-card-badge">03</span>
-                <span class="out-card-title">Tagline</span>
+        # Tab 3 — Caption Instagram
+        with tab_cap:
+            cap_safe = html.escape(caption_ig).replace("\n", "<br>")
+            st.markdown(
+                f"""
+            <div class="out-card">
+                <div class="out-card-header">
+                    <span class="out-card-badge">03</span>
+                    <span class="out-card-title">Caption Instagram</span>
+                </div>
+                <div class="out-card-body" style="white-space: pre-wrap;">{cap_safe}</div>
             </div>
-            <div class="out-card-body-tagline">&ldquo;{tag_safe}&rdquo;</div>
-        </div>
-        """, unsafe_allow_html=True)
-        copy_button(tagline, btn_id="copy_tag", label="Salin Tagline")
+            """,
+                unsafe_allow_html=True,
+            )
+            copy_button(caption_ig, btn_id="copy_cap", label="Salin Caption")
 
         # ── Expander: Raw Output (debugging) ──────────────────────────────
         with st.expander("Lihat raw output LLM (untuk debugging)", expanded=False):
@@ -747,7 +816,8 @@ if generate_clicked:
 
 # ── Placeholder sebelum generate ──────────────────────────────────────────────
 else:
-    st.markdown("""
+    st.markdown(
+        """
     <div style="
         text-align:center;
         padding: 3.5rem 1rem;
@@ -759,17 +829,22 @@ else:
             <strong style="color:#1565C0;">Generate Copywriting</strong>
         </p>
     </div>
-    """, unsafe_allow_html=True)
+    """,
+        unsafe_allow_html=True,
+    )
 
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Footer
 # ─────────────────────────────────────────────────────────────────────────────
 
-st.markdown("""
+st.markdown(
+    """
 <div class="footer-note">
     Proyek UAS Generative AI &nbsp;·&nbsp;
     LLaMA 3.1 8B (Meta, open-source) via Groq API &nbsp;·&nbsp;
     FAISS · Streamlit
 </div>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
