@@ -47,13 +47,14 @@ st.markdown(
     """
 <style>
 /* ── Google Font ── */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 /* ── Reset & Global ── */
 html, body, [class*="css"], .stApp {
     font-family: 'Inter', sans-serif !important;
-    background-color: #FFFFFF !important;
+    background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 50%, #F8FAFC 100%) !important;
     color: #111111 !important;
+    min-height: 100vh;
 }
 
 /* ── Sembunyikan Sidebar Toggle ── */
@@ -67,74 +68,146 @@ div[data-testid="collapsedControl"] {
 
 /* ── Lebar konten utama ── */
 .block-container {
-    max-width: 820px !important;
-    padding: 2.5rem 1.5rem 4rem !important;
+    max-width: 880px !important;
+    padding: 3rem 2rem 5rem !important;
+}
+
+/* ── Smooth scroll ── */
+html {
+    scroll-behavior: smooth;
 }
 
 /* ── Header / Hero ── */
 .hero {
     text-align: center;
-    padding: 2.5rem 0 2rem;
-    border-bottom: 2px solid #E8EEF6;
-    margin-bottom: 2rem;
+    padding: 3rem 0 2.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(239,246,255,0.9) 100%);
+    border-radius: 24px;
+    border: 1px solid rgba(21,101,192,0.08);
+    box-shadow: 0 4px 24px rgba(21,101,192,0.06);
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+    border-radius: 24px;
+    opacity: 0.03;
+    z-index: -1;
 }
 .hero-eyebrow {
-    display: inline-block;
-    background: #EBF3FF;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: linear-gradient(135deg, #EBF3FF 0%, #DBEAFE 100%);
     color: #1565C0;
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 700;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
-    padding: 0.3rem 0.85rem;
+    padding: 0.4rem 1.1rem;
     border-radius: 50px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid rgba(21,101,192,0.15);
+    box-shadow: 0 2px 8px rgba(21,101,192,0.08);
+    animation: fadeInDown 0.6s ease-out;
 }
 .hero-title {
-    font-size: 2.2rem;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-size: 2.6rem;
     font-weight: 800;
     color: #0D1117;
-    margin: 0 0 0.6rem;
-    line-height: 1.2;
+    margin: 0 0 0.8rem;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    animation: fadeInUp 0.7s ease-out;
 }
 .hero-title span {
-    color: #1565C0;
+    background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 .hero-sub {
-    font-size: 0.95rem;
-    color: #5A6473;
-    max-width: 540px;
+    font-size: 1rem;
+    color: #475569;
+    max-width: 580px;
     margin: 0 auto;
-    line-height: 1.65;
+    line-height: 1.7;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ── Section label ── */
 .section-label {
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: #1565C0;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.section-label::before {
+    content: '';
+    width: 3px;
+    height: 16px;
+    background: linear-gradient(180deg, #1565C0 0%, #0D47A1 100%);
+    border-radius: 2px;
 }
 
 /* ── Streamlit Input override ── */
 div[data-testid="stTextInput"] input,
 div[data-testid="stTextArea"] textarea,
 div[data-testid="stSelectbox"] > div > div {
-    background: #FAFBFC !important;
-    border: 1.5px solid #D0D9E8 !important;
-    border-radius: 8px !important;
+    background: rgba(255,255,255,0.9) !important;
+    border: 2px solid #E2E8F0 !important;
+    border-radius: 12px !important;
     color: #0D1117 !important;
     font-family: 'Inter', sans-serif !important;
-    font-size: 0.93rem !important;
-    transition: border-color 0.2s !important;
+    font-size: 0.95rem !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02) !important;
+}
+div[data-testid="stTextInput"] input:hover,
+div[data-testid="stTextArea"] textarea:hover {
+    border-color: #CBD5E1 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04) !important;
 }
 div[data-testid="stTextInput"] input:focus,
 div[data-testid="stTextArea"] textarea:focus {
     border-color: #1565C0 !important;
-    box-shadow: 0 0 0 3px rgba(21,101,192,0.12) !important;
+    box-shadow: 0 0 0 4px rgba(21,101,192,0.1), 0 4px 16px rgba(21,101,192,0.15) !important;
     outline: none !important;
+    background: #FFFFFF !important;
 }
 div[data-testid="stTextInput"] label,
 div[data-testid="stTextArea"] label,
@@ -146,22 +219,40 @@ div[data-testid="stSelectbox"] label {
 
 /* ── Generate Button ── */
 div[data-testid="stButton"] > button[kind="primary"] {
-    background: #1565C0 !important;
+    background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%) !important;
     border: none !important;
-    border-radius: 8px !important;
+    border-radius: 12px !important;
     color: #FFFFFF !important;
     font-family: 'Inter', sans-serif !important;
-    font-size: 0.95rem !important;
+    font-size: 1rem !important;
     font-weight: 700 !important;
-    padding: 0.65rem 2rem !important;
-    letter-spacing: 0.01em !important;
+    padding: 0.85rem 2.5rem !important;
+    letter-spacing: 0.02em !important;
     width: 100% !important;
-    transition: background 0.18s, box-shadow 0.18s !important;
-    box-shadow: 0 2px 8px rgba(21,101,192,0.25) !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 16px rgba(21,101,192,0.3) !important;
+    position: relative;
+    overflow: hidden;
+}
+div[data-testid="stButton"] > button[kind="primary"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
 }
 div[data-testid="stButton"] > button[kind="primary"]:hover {
-    background: #0D47A1 !important;
-    box-shadow: 0 4px 16px rgba(21,101,192,0.35) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(21,101,192,0.4) !important;
+}
+div[data-testid="stButton"] > button[kind="primary"]:hover::before {
+    left: 100%;
+}
+div[data-testid="stButton"] > button[kind="primary"]:active {
+    transform: translateY(0) !important;
 }
 
 /* ── Output section divider ── */
@@ -173,16 +264,35 @@ div[data-testid="stButton"] > button[kind="primary"]:hover {
 
 /* ── Output Card ── */
 .out-card {
-    background: #FAFBFC;
-    border: 1.5px solid #E0E8F4;
-    border-radius: 12px;
-    padding: 1.4rem 1.5rem 1.2rem;
-    margin-bottom: 1rem;
-    transition: box-shadow 0.2s, border-color 0.2s;
+    background: rgba(255,255,255,0.95);
+    border: 2px solid rgba(226,232,240,0.8);
+    border-radius: 16px;
+    padding: 1.6rem 1.8rem 1.4rem;
+    margin-bottom: 1.2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+    position: relative;
+    overflow: hidden;
+}
+.out-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #1565C0 0%, #0D47A1 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
 .out-card:hover {
-    border-color: #1565C0;
-    box-shadow: 0 4px 18px rgba(21,101,192,0.1);
+    border-color: rgba(21,101,192,0.3);
+    box-shadow: 0 8px 32px rgba(21,101,192,0.12);
+    transform: translateY(-2px);
+}
+.out-card:hover::before {
+    transform: scaleX(1);
 }
 .out-card-header {
     display: flex;
@@ -193,19 +303,22 @@ div[data-testid="stButton"] > button[kind="primary"]:hover {
     border-bottom: 1px solid #E8EEF6;
 }
 .out-card-badge {
-    font-size: 0.68rem;
+    font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    background: #EBF3FF;
+    background: linear-gradient(135deg, #EBF3FF 0%, #DBEAFE 100%);
     color: #1565C0;
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid rgba(21,101,192,0.12);
+    box-shadow: 0 2px 4px rgba(21,101,192,0.05);
 }
 .out-card-title {
-    font-size: 0.92rem;
+    font-size: 0.95rem;
     font-weight: 700;
     color: #0D1117;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
 }
 .out-card-body {
     font-size: 0.93rem;
@@ -215,13 +328,18 @@ div[data-testid="stButton"] > button[kind="primary"]:hover {
     word-break: break-word;
 }
 .out-card-body-tagline {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #1565C0;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-style: italic;
     text-align: center;
-    padding: 0.75rem 0 0.25rem;
+    padding: 0.85rem 0 0.35rem;
     line-height: 1.5;
+    letter-spacing: -0.01em;
 }
 
 /* ── Readonly text area (caption) ── */
@@ -270,46 +388,63 @@ div[data-testid="stTabs"] [data-testid="stTabContent"] {
 .copy-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
-    margin-top: 0.6rem;
-    padding: 0.3rem 0.8rem;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1.2rem;
     font-family: 'Inter', sans-serif;
-    font-size: 0.78rem;
+    font-size: 0.82rem;
     font-weight: 600;
     color: #1565C0;
-    background: #EBF3FF;
-    border: 1px solid #BDD4F5;
-    border-radius: 6px;
+    background: linear-gradient(135deg, #EBF3FF 0%, #DBEAFE 100%);
+    border: 1.5px solid rgba(21,101,192,0.2);
+    border-radius: 10px;
     cursor: pointer;
-    transition: background 0.15s, color 0.15s;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(21,101,192,0.08);
 }
 .copy-btn:hover {
-    background: #1565C0;
+    background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
     color: #FFFFFF;
     border-color: #1565C0;
+    box-shadow: 0 4px 16px rgba(21,101,192,0.25);
+    transform: translateY(-1px);
+}
+.copy-btn:active {
+    transform: translateY(0);
 }
 
 /* ── Metadata strip ── */
 .meta-strip {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    margin: 1.25rem 0;
-    font-size: 0.8rem;
+    gap: 0.85rem;
+    margin: 1.5rem 0;
+    font-size: 0.82rem;
     color: #5A6473;
     flex-wrap: wrap;
+    padding: 1rem 1.2rem;
+    background: rgba(255,255,255,0.7);
+    border-radius: 12px;
+    border: 1px solid rgba(226,232,240,0.8);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
 }
 .meta-pill {
     background: #F1F5FB;
-    border: 1px solid #D0D9E8;
+    border: 1.5px solid #D0D9E8;
     border-radius: 50px;
-    padding: 0.25rem 0.75rem;
+    padding: 0.35rem 0.9rem;
     font-weight: 600;
     color: #374151;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease;
 }
-.meta-pill.rag    { background:#E6F9F0; border-color:#A7DFC0; color:#166534; }
-.meta-pill.partial{ background:#FEF9E6; border-color:#F0D88A; color:#854D0E; }
-.meta-pill.zero   { background:#FEF2F2; border-color:#FCA5A5; color:#991B1B; }
+.meta-pill:hover {
+    transform: scale(1.05);
+}
+.meta-pill.rag    { background: linear-gradient(135deg, #E6F9F0 0%, #D1FAE5 100%); border-color:#A7DFC0; color:#166534; }
+.meta-pill.partial{ background: linear-gradient(135deg, #FEF9E6 0%, #FEF3C7 100%); border-color:#F0D88A; color:#854D0E; }
+.meta-pill.zero   { background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); border-color:#FCA5A5; color:#991B1B; }
 
 /* ── Alert override ── */
 div[data-testid="stAlert"] {
@@ -318,7 +453,14 @@ div[data-testid="stAlert"] {
 
 /* ── Spinner ── */
 div[data-testid="stSpinner"] > div {
-    color: #1565C0 !important;
+    border-color: #1565C0 !important;
+    border-right-color: transparent !important;
+}
+div[data-testid="stStatusWidget"] {
+    background: rgba(255,255,255,0.95) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 16px rgba(21,101,192,0.12) !important;
+    border: 1px solid rgba(21,101,192,0.1) !important;
 }
 
 /* ── Expander ── */
@@ -330,11 +472,18 @@ details summary {
 /* ── Footer caption ── */
 .footer-note {
     text-align: center;
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #E8EEF6;
-    font-size: 0.78rem;
-    color: #9CA3AF;
+    margin-top: 4rem;
+    padding: 1.8rem 0;
+    border-top: 2px solid rgba(226,232,240,0.8);
+    font-size: 0.8rem;
+    color: #94A3B8;
+    background: rgba(255,255,255,0.5);
+    border-radius: 12px;
+}
+.footer-note::before {
+    content: '⚡';
+    margin-right: 0.5rem;
+    font-size: 1rem;
 }
 </style>
 """,
@@ -541,27 +690,27 @@ def copy_button(text: str, btn_id: str, label: str = "Salin") -> None:
             display: inline-flex;
             align-items: center;
             gap: 0.4rem;
-            padding: 0.45rem 1.1rem;
+            padding: 0.5rem 1.2rem;
             font-family: 'Inter', 'Segoe UI', sans-serif;
             font-size: 0.82rem;
             font-weight: 600;
             color: #1565C0;
-            background: #EBF3FF;
-            border: 1.5px solid #BDD4F5;
-            border-radius: 8px;
+            background: linear-gradient(135deg, #EBF3FF 0%, #DBEAFE 100%);
+            border: 1.5px solid rgba(21,101,192,0.2);
+            border-radius: 10px;
             cursor: pointer;
-            transition: background 0.15s, color 0.15s, box-shadow 0.15s;
-            letter-spacing: 0.01em;
-            box-shadow: 0 1px 4px rgba(21,101,192,0.10);
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(21,101,192,0.08);
         }}
         .copy-btn:hover {{
-            background: #1565C0;
+            background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
             color: #FFFFFF;
             border-color: #1565C0;
-            box-shadow: 0 3px 10px rgba(21,101,192,0.25);
+            box-shadow: 0 4px 16px rgba(21,101,192,0.25);
+            transform: translateY(-1px);
         }}
         .copy-btn:active {{
-            transform: scale(0.97);
+            transform: translateY(0);
         }}
     </style>
     <button class="copy-btn" id="{btn_id}" onclick="
@@ -569,24 +718,32 @@ def copy_button(text: str, btn_id: str, label: str = "Salin") -> None:
             .then(()=>{{
                 var b=document.getElementById('{btn_id}');
                 b.innerHTML='&#10003;&nbsp;Tersalin!';
-                b.style.background='#166534';
+                b.style.background='linear-gradient(135deg, #166534 0%, #15803D 100%)';
                 b.style.color='#FFFFFF';
                 b.style.borderColor='#166534';
+                b.style.transform='translateY(0)';
                 setTimeout(()=>{{
                     b.innerHTML='&#128203;&nbsp;{label}';
                     b.style.background='';
                     b.style.color='';
                     b.style.borderColor='';
+                    b.style.transform='';
                 }}, 2000);
             }})
             .catch(()=>{{
                 var b=document.getElementById('{btn_id}');
-                b.textContent='Gagal ✕';
-                setTimeout(()=>{{b.innerHTML='&#128203;&nbsp;{label}';}}, 2000);
+                b.innerHTML='&#10007;&nbsp;Gagal';
+                b.style.background='linear-gradient(135deg, #991B1B 0%, #DC2626 100%)';
+                b.style.color='#FFFFFF';
+                setTimeout(()=>{{
+                    b.innerHTML='&#128203;&nbsp;{label}';
+                    b.style.background='';
+                    b.style.color='';
+                }}, 2000);
             }});
     ">&#128203;&nbsp;{label}</button>
     """
-    components.html(html_content, height=46)
+    components.html(html_content, height=50)
 
 
 # ─────────────────────────────────────────────────────────────────────────────

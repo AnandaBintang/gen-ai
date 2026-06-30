@@ -9,18 +9,16 @@ load_dotenv()
 GROQ_MODEL = "llama-3.1-8b-instant"
 TOP_K = 3
 
-# Minimum cosine similarity agar sebuah dokumen dianggap "relevan".
-# Dokumen di bawah threshold ini tidak dipakai sebagai referensi.
 SIMILARITY_THRESHOLD = 0.45
 
 # Mode label yang dikembalikan ke caller
-MODE_RAG        = "rag"        # >= 2 dokumen relevan  → few-shot penuh
-MODE_PARTIAL    = "partial"    # == 1 dokumen relevan  → 1 referensi + adaptasi
-MODE_ZEROSHOT   = "zeroshot"   # 0 dokumen relevan     → generate murni
+MODE_RAG        = "rag"        # >= 2 dokumen relevan  → few-shot
+MODE_PARTIAL    = "partial"    # == 1 dokumen relevan  → 1 reference + adapt
+MODE_ZEROSHOT   = "zeroshot"   # 0 dokumen relevan     → full generate
 
 
 # ─────────────────────────────────────────────────────────────
-# System prompts — satu per mode agar instruksi tetap fokus
+# System prompts
 # ─────────────────────────────────────────────────────────────
 
 _BASE_FORMAT = """
@@ -78,7 +76,7 @@ class RAGPipeline:
         return [d for d in retrieved_docs if d["score"] >= threshold]
 
     # ─────────────────────────────────────────────────────────
-    # Prompt builders — satu per mode
+    # Prompt builders
     # ─────────────────────────────────────────────────────────
 
     def build_rag_prompt(
@@ -205,19 +203,19 @@ class RAGPipeline:
             mode, retrieved_docs, relevant_docs,
             similarity_threshold, raw_output
         """
-        # 1. Retrieve top-k kandidat dari FAISS
+        # Retrieve top-k kandidat dari FAISS
         query = f"{kategori} {nama_produk} {keunggulan}"
         retrieved_docs = self.embedder.retrieve(query, k=k)
 
-        # 2. Filter berdasarkan similarity threshold
+        # Filter berdasarkan similarity threshold
         relevant_docs = self.filter_by_threshold(retrieved_docs, similarity_threshold)
 
-        # 3. Routing → pilih mode + bangun prompt
+        # Routing → pilih mode + bangun prompt
         mode, system_prompt, user_prompt = self.route(
             nama_produk, kategori, keunggulan, relevant_docs
         )
 
-        # 4. Call Groq API
+        # Call Groq API
         response = self.client.chat.completions.create(
             model=GROQ_MODEL,
             messages=[
@@ -256,13 +254,11 @@ class RAGPipeline:
         """
         import re
 
-        # Pola: opsional `**`, nama section, opsional `**`, opsional `:`
-        # Ditangkap case-insensitive, boleh ada spasi di awal.
         SECTION_RE = re.compile(
             r"^\s*\*{0,2}(DESKRIPSI|CAPTION_IG|TAGLINE)\*{0,2}:?\s*$",
             re.IGNORECASE,
         )
-        # Alternatif: header + konten di baris yang sama → "DESKRIPSI: teks..."
+
         INLINE_RE = re.compile(
             r"^\s*\*{0,2}(DESKRIPSI|CAPTION_IG|TAGLINE)\*{0,2}:\s*(.+)$",
             re.IGNORECASE,
@@ -284,7 +280,6 @@ class RAGPipeline:
                 result[current_key] = "\n".join(buffer).strip()
 
         for line in lines:
-            # Cek dulu format inline: "DESKRIPSI: konten langsung"
             m_inline = INLINE_RE.match(line)
             m_section = SECTION_RE.match(line)
 
@@ -311,13 +306,13 @@ if __name__ == "__main__":
     pipeline = RAGPipeline()
 
     test_cases = [
-        # Produk yang pasti ada banyak referensi → RAG
+        # Produk yang pasti ada banyak referensi > RAG
         {
             "nama_produk": "Keripik Tempe Renyah",
             "kategori": "makanan",
             "keunggulan": "tempe segar, bumbu bawang putih, renyah tahan lama, tanpa pengawet",
         },
-        # Produk unik / sangat niche → mungkin Partial / Zero-shot
+        # Produk unik / sangat niche > mungkin Partial / Zero-shot
         {
             "nama_produk": "Sabun Lumpur Vulkanik Ijen",
             "kategori": "kosmetik",
